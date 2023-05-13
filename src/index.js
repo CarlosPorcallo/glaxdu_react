@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
+// Bootstrap CSS
+import './assets/css/bootstrap.min.css'
+// Icon Font CSS
+import './assets/css/icons.min.css'
+ // Plugins CSS
+import './assets/css/plugins.css'
+// Main Style CSS
+import './assets/css/style.css'
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
