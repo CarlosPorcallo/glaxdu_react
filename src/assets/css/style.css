@@ -2839,6 +2839,9 @@ textarea:focus {
   }
 }
 
+.choose-area {
+  background-image:url(../../assets/img/bg/bg-8.jpg);
+}
 .choose-bg-light-blue {
   background-color: #48a7d4;
 }
@@ -3494,6 +3497,7 @@ textarea:focus {
 }
 /* about us page */
 .breadcrumb-top {
+  background-image:url(../../assets/img/bg/breadcrumb-bg.jpg);
   position: relative;
   z-index: 9;
 }
@@ -6080,6 +6084,7 @@ textarea:focus {
 }
 /*--------- 26. Video style ---------*/
 .video-area {
+  background-image:url(../../assets/img/banner/video.jpg);
   position: relative;
 }
 .video-area:before {
@@ -6949,6 +6954,7 @@ textarea:focus {
 
 .seat-book-wrap {
   padding: 42px 55px 50px;
+  background-image:url(../../assets/img/event/seat-book.jpg);
 }
 @media only screen and (max-width: 767px) {
   .seat-book-wrap {

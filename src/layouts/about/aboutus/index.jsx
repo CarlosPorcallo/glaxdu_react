@@ -18,7 +18,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/R1wwopVP7-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/R1wwopVP7-A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>

@@ -36,7 +36,7 @@
         loop: true,
         nav: true,
         autoplay: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        navText: ['<i className="fa fa-angle-left"></i>', '<i className="fa fa-angle-right"></i>'],
         autoplayTimeout: 5000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
@@ -59,7 +59,7 @@
     /* course-slider-active */
     $('.course-slider-active').owlCarousel({
         loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        navText: ['<i className="fa fa-angle-left"></i>', '<i className="fa fa-angle-right"></i>'],
         nav: true,
         autoplay: false,
         autoplayTimeout: 5000,
@@ -86,7 +86,7 @@
     /* event-active */
     $('.event-active').owlCarousel({
         loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        navText: ['<i className="fa fa-angle-left"></i>', '<i className="fa fa-angle-right"></i>'],
         nav: true,
         autoplay: false,
         autoplayTimeout: 5000,
@@ -114,7 +114,7 @@
     /* event-active */
     $('.course-slider-active-2').owlCarousel({
         loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        navText: ['<i className="fa fa-angle-left"></i>', '<i className="fa fa-angle-right"></i>'],
         nav: true,
         autoplay: false,
         autoplayTimeout: 5000,
@@ -144,7 +144,7 @@
     /* event-active */
     $('.event-gallery-active').owlCarousel({
         loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        navText: ['<i className="fa fa-angle-left"></i>', '<i className="fa fa-angle-right"></i>'],
         nav: true,
         autoplay: false,
         autoplayTimeout: 5000,
@@ -177,8 +177,8 @@
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<span class="b-navigation b-navigation-prev "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="b-navigation b-navigation-next active"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="b-navigation b-navigation-prev "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="b-navigation b-navigation-next active"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 992,
@@ -212,8 +212,8 @@
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: '<span class="b-navigation b-navigation-prev "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="b-navigation b-navigation-next active"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="b-navigation b-navigation-prev "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="b-navigation b-navigation-next active"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 1199,
@@ -247,8 +247,8 @@
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<span class="b-navigation b-navigation-prev "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="b-navigation b-navigation-next active"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="b-navigation b-navigation-prev "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="b-navigation b-navigation-next active"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 1200,
@@ -288,8 +288,8 @@
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<span class="b-navigation2 b-navigation-prev2 "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="b-navigation2 b-navigation-next2 active2"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="b-navigation2 b-navigation-prev2 "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="b-navigation2 b-navigation-next2 active2"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 1200,
@@ -329,8 +329,8 @@
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<span class="b-navigation3 b-navigation-prev3 "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="b-navigation3 b-navigation-next3 active3"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="b-navigation3 b-navigation-prev3 "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="b-navigation3 b-navigation-next3 active3"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 1200,
@@ -400,8 +400,8 @@
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        prevArrow: '<span class="b-navigation b-navigation-prev "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="b-navigation b-navigation-next active"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="b-navigation b-navigation-prev "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="b-navigation b-navigation-next active"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 420,
@@ -417,8 +417,8 @@
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<span class="e-navigation e-navigation-prev "><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="e-navigation e-navigation-next active"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="e-navigation e-navigation-prev "><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="e-navigation e-navigation-next active"><i className="fa fa-angle-right"></i></span>',
         responsive: [
             {
               breakpoint: 992,
@@ -617,8 +617,8 @@
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: '<span class="product-dec-icon product-dec-prev"><i class="fa fa-angle-left"></i></span>',
-        nextArrow: '<span class="product-dec-icon product-dec-next"><i class="fa fa-angle-right"></i></span>',
+        prevArrow: '<span className="product-dec-icon product-dec-prev"><i className="fa fa-angle-left"></i></span>',
+        nextArrow: '<span className="product-dec-icon product-dec-next"><i className="fa fa-angle-right"></i></span>',
         responsive: [{
                 breakpoint: 768,
                 settings: {
@@ -656,8 +656,8 @@
     	Cart Plus Minus Button
     ------------------------------ */
     var CartPlusMinus = $('.cart-plus-minus');
-    CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
-    CartPlusMinus.append('<div class="inc qtybutton">+</div>');
+    CartPlusMinus.prepend('<div className="dec qtybutton">-</div>');
+    CartPlusMinus.append('<div className="inc qtybutton">+</div>');
     $(".qtybutton").on("click", function() {
         var $button = $(this);
         var oldValue = $button.parent().find("input").val();
@@ -721,7 +721,7 @@
         ScrollUp
     ---------------------------- */
     $.scrollUp({
-        scrollText: '<i class="fa fa-angle-double-up"></i>',
+        scrollText: '<i className="fa fa-angle-double-up"></i>',
         easingType: 'linear',
         scrollSpeed: 900,
         animation: 'fade'
