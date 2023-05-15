@@ -8,6 +8,9 @@ import CourseDetails from '../pages/courses/coursedetails';
 import Event from '../pages/events/event';
 import EventDetails from '../pages/events/eventdetails';
 import LoginRegister from '../pages/loginregister';
+import Blog from '../pages/blog/blogs';
+import BlogDetail from '../pages/blog/blogdetail';
+import Contact from '../pages/contact';
 
 const Rout3r = () => {
     return (
@@ -22,6 +25,9 @@ const Rout3r = () => {
                 <Route exact path='/event' element={<Event />}></Route>
                 <Route exact path='/event-details' element={<EventDetails />}></Route>
                 <Route exact path='/login-register' element={<LoginRegister />}></Route>
+                <Route exact path='/blog' element={<Blog />}></Route>
+                <Route exact path='/blog/detail' element={<BlogDetail />}></Route>
+                <Route exact path='/contact' element={<Contact />}></Route>
             </Routes>
         </Router>
     );
