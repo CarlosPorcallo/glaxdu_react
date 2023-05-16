@@ -21,12 +21,12 @@ const Rout3r = () => {
                 <Route exact path='/home' element={<Home />}></Route>
                 <Route exact path='/about' element={<About />}></Route>
                 <Route exact path='/course' element={<Course />}></Route>
-                <Route exact path='/course-details' element={<CourseDetails />}></Route>
+                <Route exact path='/course/detail/:id' element={<CourseDetails />}></Route>
                 <Route exact path='/event' element={<Event />}></Route>
-                <Route exact path='/event-details' element={<EventDetails />}></Route>
+                <Route exact path='/event/detail/:id' element={<EventDetails />}></Route>
                 <Route exact path='/login' element={<Login />}></Route>
                 <Route exact path='/blog' element={<Blog />}></Route>
-                <Route exact path='/blog/detail' element={<BlogDetail />}></Route>
+                <Route exact path='/blog/detail/:id' element={<BlogDetail />}></Route>
                 <Route exact path='/contact' element={<Contact />}></Route>
             </Routes>
         </Router>

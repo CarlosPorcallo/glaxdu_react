@@ -1,4 +1,5 @@
-export const settings = {
+// settings
+export const settings_home = {
     slides: 1,
     theme: "",
     nav: false,
@@ -7,8 +8,18 @@ export const settings = {
     autoplay: true,
     loop: true
 };
+export const settings_courses = {
+    slides: 3,
+    theme: "",
+    nav: false,
+    dots: false,
+    margin: 8,
+    autoplay: true,
+    loop: true
+};
 
-export const slides = [
+// slides
+export const slides_home = [
     {
         "heading": "MakeYour Own World 1",
         "paragraphs": [

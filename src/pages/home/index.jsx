@@ -1,8 +1,9 @@
 import {React, Fragment} from 'react';
 
+// layouts
 import Header from '../../layouts/header';
-import SliderArea from '../../layouts/slider/sliderarea';
-import ChoseUs from '../../layouts/chose/choseus';
+import Slider from '../../layouts/slider/sliderhome';
+import ChoseUs from '../../layouts/chose/cards';
 import AboutUs from '../../layouts/about/aboutus';
 import CourseArea from '../../layouts/course/coursearea';
 import AchievementArea from '../../layouts/achievement/achievementarea';
@@ -15,7 +16,7 @@ const Home = () => {
     return (
         <Fragment>
             <Header />
-            <SliderArea />
+            <Slider />
             <ChoseUs />
             <AboutUs />
             <CourseArea />

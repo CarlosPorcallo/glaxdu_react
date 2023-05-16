@@ -24,7 +24,7 @@ export const paths= [
                 "name": "course page"
             },
             {
-                "href": "/course-details",
+                "href": "/course/detail/1",
                 "name": "course details"
             },
             {
@@ -32,11 +32,11 @@ export const paths= [
                 "name": "event page"
             },
             {
-                "href": "/event-details",
+                "href": "/event/detail/1",
                 "name": "event details"
             },
             {
-                "href": "/login-register",
+                "href": "/login",
                 "name": "login / register"
             }
         ]
@@ -56,7 +56,7 @@ export const paths= [
                 "name": "blog"
             },
             {
-                "href": "/blog/detail",
+                "href": "/blog/detail/1",
                 "name": "blog details"
             },
         ]

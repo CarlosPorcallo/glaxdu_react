@@ -2,21 +2,21 @@ import { React, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import {settings, slides} from '../../../config/slider';
+import {settings_home, slides_home} from '../../../config/slider';
 
-const SliderArea = () => {
+const SliderHome = () => {
     return (
         <div className="slider-area">
             <OwlCarousel
-                items={settings.slides}
-                className={settings.theme}
-                nav={settings.nav}
-                dots={settings.dots}
-                margin={settings.margin}
-                autoplay={settings.autoplay}
-                loop={settings.loop}
+                items={settings_home.slides}
+                className={settings_home.theme}
+                nav={settings_home.nav}
+                dots={settings_home.dots}
+                margin={settings_home.margin}
+                autoplay={settings_home.autoplay}
+                loop={settings_home.loop}
             >
-                {slides.map((slide) => (
+                {slides_home.map((slide) => (
                     <div className="single-slider slider-height-1 bg-img">
                         <div className="container">
                             <div className="row">
@@ -51,4 +51,4 @@ const SliderArea = () => {
     );
 }
  
-export default SliderArea;
+export default SliderHome;

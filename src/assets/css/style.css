@@ -3607,9 +3607,6 @@ textarea:focus {
 }
 
 /*--------- 6. Course area ---------*/
-.course-area {
-  background-image:url(../../assets/img/bg/bg-1.jpg);
-}
 .single-course {
   position: relative;
 }
