@@ -6,7 +6,6 @@ import ChoseUs from '../../layouts/chose/choseus';
 import AboutUs from '../../layouts/about/aboutus';
 import CourseArea from '../../layouts/course/coursearea';
 import AchievementArea from '../../layouts/achievement/achievementarea';
-import RegisterArea from '../../layouts/register/registerarea';
 import TeacherArea from '../../layouts/teacher/teacherarea';
 import EventArea from '../../layouts/event/eventarea';
 import BlogArea from '../../layouts/blog/blogarea';
@@ -23,7 +22,6 @@ const Home = () => {
             <TeacherArea />
             <EventArea />
             <BlogArea />
-            <RegisterArea />
             <Footer />
         </Fragment>
     );

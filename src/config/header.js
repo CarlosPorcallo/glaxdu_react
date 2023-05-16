@@ -1,5 +1,7 @@
+// constantes
 export const email_contact= "education@email.com";
 export const phone= "+987 558 547 589";
+export const header_img= "../assets/img/icon-img/header-shape.png";
 // rutas de la barra de navegación
 export const paths= [
     {

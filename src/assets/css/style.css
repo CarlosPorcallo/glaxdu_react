@@ -1638,7 +1638,6 @@ textarea:focus {
 
 /*--------- 2. Header style ---------*/
 .header-top {
-  background-image:url(../../assets/img/icon-img/header-shape.png);
   padding: 15px 0 22px;
   position: relative;
 }

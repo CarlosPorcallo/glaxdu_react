@@ -2,14 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import './index.css';
-import { email_contact, phone, paths } from '../../config/header.js';
+import { email_contact, phone, paths, header_img } from '../../config/header.js';
 
 import NavMenu from '../../components/navmenu';
 
 const Header = () => {
     return (
         <header className="header-area">
-            <div className="header-top bg-img">
+            <div className="header-top bg-img" style={{backgroundImage: header_img}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-7 col-12 col-sm-8">
@@ -23,8 +23,8 @@ const Header = () => {
                         <div className="col-lg-6 col-md-5 col-12 col-sm-4">
                             <div className="login-register">
                                 <ul>
-                                    <li><Link to="/login-register">Login</Link></li>
-                                    <li><Link to="/login-register">Register</Link></li>
+                                    <li><Link to="/login">Login</Link></li>
+                                    <li><Link to="/login">Register</Link></li>
                                 </ul>
                             </div>
                         </div>

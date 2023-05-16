@@ -1,4 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+// config
+import {width, height, video_src, presentacion1} from '../../../config/about';
+
+// components
+import Video from '../../../components/video';
 
 const AboutUs = () => {
     return (
@@ -9,16 +16,24 @@ const AboutUs = () => {
                         <div className="about-content">
                             <div className="section-title section-title-green mb-30">
                                 <h2>About <span>Us</span></h2>
-                                <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+                                {presentacion1.map((linea) => (
+                                    <p>{linea}</p>
+                                ))}
                             </div>
-                            <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven  iam, quis nostrud exer citation ullamco laboris nisi ut perspiciatis unde omnis iste natus error sit voluptate.</p>
                             <div className="about-btn mt-45">
-                                <a className="default-btn" href="https://www.youtube.com/watch?v=R1wwopVP7-A">ABOUT US</a>
+                                <Link 
+                                    className="default-btn"
+                                    to="/about"
+                                >About Us</Link>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/R1wwopVP7-A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <Video
+                            width={width}
+                            height={height}
+                            src={video_src}
+                        />
                     </div>
                 </div>
             </div>

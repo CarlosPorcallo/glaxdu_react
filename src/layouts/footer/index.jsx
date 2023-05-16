@@ -1,6 +1,16 @@
 import {React, Fragment} from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+// settings
+import {company} from '../../config/footer';
+
+// layouts
+import SocialNetwork from '../../components/socialnetwork';
+import NewsLatter from '../../components/forms/newslatter';
+import AboutUsFooter from '../about/aboutusfooter';
 
 const Footer = () => {
+    const date = new Date();
     return (
         <Fragment>
             <footer className="footer-area">
@@ -8,28 +18,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="footer-widget mb-40">
-                                    <div className="footer-title">
-                                        <h4>ABOUT US</h4>
-                                    </div>
-                                    <div className="footer-about">
-                                        <p>Ugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu</p>
-                                        <div className="f-contact-info">
-                                            <div className="single-f-contact-info">
-                                                <i className="fa fa-home"></i>
-                                                <span>Uttara, Dhaka, Bangladesh</span>
-                                            </div>
-                                            <div className="single-f-contact-info">
-                                                <i className="fa fa-envelope-o"></i>
-                                                <span><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">education@email.com</a></span>
-                                            </div>
-                                            <div className="single-f-contact-info">
-                                                <i className="fa fa-phone"></i>
-                                                <span> +98 558 547 589</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <AboutUsFooter />
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-6">
                                 <div className="footer-widget mb-40">
@@ -38,11 +27,10 @@ const Footer = () => {
                                     </div>
                                     <div className="footer-list">
                                         <ul>
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="course.html">Courses</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Admission</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Terms & Conditions</a></li>
+                                            <li><Link to="/home">Home</Link></li>
+                                            <li><Link to="/about">About Us</Link></li>
+                                            <li><Link to="/course">Courses</Link></li>
+                                            <li><Link to="/admission">Admission</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -54,11 +42,11 @@ const Footer = () => {
                                     </div>
                                     <div className="footer-list">
                                         <ul>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Under Graduate Programmes </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Graduate Programmes </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Diploma Courses</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Others Programmes</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Short Courses</a></li>
+                                            <li><a href="#">Under Graduate Programmes </a></li>
+                                            <li><a href="#">Graduate Programmes </a></li>
+                                            <li><a href="#">Diploma Courses</a></li>
+                                            <li><a href="#">Others Programmes</a></li>
+                                            <li><a href="#">Short Courses</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -70,36 +58,16 @@ const Footer = () => {
                                     </div>
                                     <div className="footer-gallery">
                                         <ul>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A"><img src="assets/img/gallery/gallery-1.png" alt="" /></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A"><img src="assets/img/gallery/gallery-2.png" alt="" /></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A"><img src="assets/img/gallery/gallery-3.png" alt="" /></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A"><img src="assets/img/gallery/gallery-4.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-1.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-2.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-3.png" alt="" /></a></li>
+                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-4.png" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-12">
-                                <div className="footer-widget mb-40">
-                                    <div className="footer-title">
-                                        <h4>News Latter</h4>
-                                    </div>
-                                    <div className="subscribe-style">
-                                        <p>Dugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde</p>
-                                        <div id="mc_embed_signup" className="subscribe-form">
-                                            <form id="mc-embedded-subscribe-form" className="validate" noValidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                                                <div id="mc_embed_signup_scroll" className="mc-form">
-                                                    <input className="email" type="email" required="" placeholder="Your E-mail Address" name="EMAIL" value="" />
-                                                    <div className="mc-news" aria-hidden="true">
-                                                        <input type="text" value="" tabIndex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" />
-                                                    </div>
-                                                    <div className="clear">
-                                                        <input id="mc-embedded-subscribe" className="button" type="submit" name="subscribe" value="SUBMIT" />
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                                <NewsLatter />
                             </div>
                         </div>
                     </div>
@@ -111,29 +79,12 @@ const Footer = () => {
                                 <div className="copyright">
                                     <p>
                                         Copyright ©
-                                        <a href="https://www.youtube.com/watch?v=R1wwopVP7-A">UIC</a>
-                                        . All Right Reserved.
+                                        <a href="#">{company}</a>
+                                        {date.getFullYear()} All Right Reserved.
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-lg-8 col-md-12">
-                                <div className="footer-menu-social">
-                                    <div className="footer-menu">
-                                        <ul>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Privecy & Policy</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=R1wwopVP7-A">Terms & Conditions of Use</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="footer-social">
-                                        <ul>
-                                            <li><a className="facebook" href="https://www.youtube.com/watch?v=R1wwopVP7-A"><i className="fa fa-facebook"></i></a></li>
-                                            <li><a className="youtube" href="https://www.youtube.com/watch?v=R1wwopVP7-A"><i className="fa fa-youtube-play"></i></a></li>
-                                            <li><a className="twitter" href="https://www.youtube.com/watch?v=R1wwopVP7-A"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a className="google-plus" href="https://www.youtube.com/watch?v=R1wwopVP7-A"><i className="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            <SocialNetwork />
                         </div>
                     </div>
                 </div>

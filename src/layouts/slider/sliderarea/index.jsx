@@ -1,44 +1,52 @@
-import React from 'react';
-import Slider from "react-slick";
+import { React, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import {settings, slides} from '../../../config/slider';
 
 const SliderArea = () => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 10000,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
-
     return (
         <div className="slider-area">
-            <Slider {...settings}>
-                <div className="single-slider slider-height-1 bg-img">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-9 col-md-7 col-12 col-sm-12">
-                                <div className="slider-content slider-animated-1 pt-230">
-                                    <h1 className="animated">MakeYour Own World 1</h1>
-                                    <p className="animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-                                    <div className="slider-btn">
-                                        <Link 
-                                            to="/about"
-                                            className="animated default-btn btn-green-color"
-                                        >
-                                            ABOUT US
-                                        </Link>
-                                        <a className="animated default-btn btn-white-color" href="contact.html">CONTACT US</a>
+            <OwlCarousel
+                items={settings.slides}
+                className={settings.theme}
+                nav={settings.nav}
+                dots={settings.dots}
+                margin={settings.margin}
+                autoplay={settings.autoplay}
+                loop={settings.loop}
+            >
+                {slides.map((slide) => (
+                    <div className="single-slider slider-height-1 bg-img">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-9 col-md-7 col-12 col-sm-12">
+                                    <div className="slider-content slider-animated-1 pt-230">
+                                        <h1 className="animated">{slide.heading}</h1>
+                                        {slide.paragraphs.map((p) => (
+                                            <p className="animated">{p}</p>
+                                        ))}
+            
+                                        <div className="slider-btn">
+                                            {slide.buttons.map((btn) => (
+                                                <Link 
+                                                    to={btn.href}
+                                                    className={btn.className}
+                                                >
+                                                    {btn.name}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="slider-single-img slider-animated-1">
-                            <img className="animated" src="../../../assets/img/slider/single-slide-1.png" alt="" />
+                            <div className="slider-single-img slider-animated-1">
+                                <img className="animated" src={slide.bg.src} alt={slide.bg.alt} />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </Slider>
+                ))}
+            </OwlCarousel>
         </div>
     );
 }

@@ -3,8 +3,8 @@ import React from 'react';
 import HeaderGrid from '../../../components/headergrid';
 
 const LoginRegisterGrid = () => {
-    const current_page = "Login/Register";
-    const heading = "Login/Register";
+    const current_page = "Login";
+    const heading = "Login";
     const caption = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .";
     const home = {
         "href": "/home",
