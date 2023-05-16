@@ -1,5 +1,5 @@
 // constantes
-export const caption = "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br />veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.";
+export const caption = "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.";
 
 // slides
 export const slides = [
@@ -14,7 +14,7 @@ export const slides = [
         "duration": "4yrs",
         "href": "/course/detail/1",
         "img": {
-            "src": "../../../assets/img/course/course-1.jpg", 
+            "src": "course-1.jpg", 
             "alt": ""
         },
         "button": {
@@ -33,7 +33,7 @@ export const slides = [
         "duration": "4yrs",
         "href": "/course/detail/2",
         "img": {
-            "src": "../../../assets/img/course/course-2.jpg", 
+            "src": "course-2.jpg", 
             "alt": ""
         },
         "button": {
@@ -52,7 +52,7 @@ export const slides = [
         "duration": "4yrs",
         "href": "/course/detail/3",
         "img": {
-            "src": "../../../assets/img/course/course-3.jpg", 
+            "src": "course-3.jpg", 
             "alt": ""
         },
         "button": {
@@ -72,7 +72,7 @@ export const slides = [
         "duration": "4yrs",
         "href": "/course/detail/4",
         "img": {
-            "src": "../../../assets/img/course/course-4.jpg",
+            "src": "course-4.jpg",
             "alt": ""
         },
         "button": {
@@ -91,7 +91,7 @@ export const slides = [
         "duration": "4yrs",
         "href": "/course/detail/5",
         "img": {
-            "src": "../../../assets/img/course/course-2.jpg",
+            "src": "course-2.jpg",
             "alt": ""
         },
         "button": {

@@ -9,7 +9,7 @@ export const newsfeed = [
         "heading": "Testing is a great thing.",
         "href": "/blog/detail/1",
         "img": {
-            "src": "../../../assets/img/blog/blog-1.jpg",
+            "src": "blog-1.jpg",
             "alt": ""
         },
         "paragraphs": [
@@ -25,7 +25,7 @@ export const newsfeed = [
         "heading": "A variation of the ordinary.",
         "href": "/blog/detail/2",
         "img": {
-            "src": "../../../assets/img/blog/blog-2.jpg",
+            "src": "blog-2.jpg",
             "alt": ""
         },
         "paragraphs": [
@@ -41,7 +41,7 @@ export const newsfeed = [
         "heading": "In publishing and graphic.",
         "href": "/blog/detail/3",
         "img": {
-            "src": "../../../assets/img/blog/blog-3.jpg",
+            "src": "blog-3.jpg",
             "alt": ""
         },
         "paragraphs": [
@@ -57,7 +57,7 @@ export const newsfeed = [
         "heading": "Learn English in ease.",
         "href": "/blog/detail/3",
         "img": {
-            "src": "../../../assets/img/blog/blog-4.jpg",
+            "src": "blog-4.jpg",
             "alt": ""
         },
         "paragraphs": [

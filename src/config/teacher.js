@@ -1,12 +1,12 @@
 // constantes
-export const caption = "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ";
+export const caption = "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ";
 
 // cards
 export const cards = [
     {
         "id": 1,
         "img": {
-            "src": "../../../assets/img/teacher/teacher-1.jpg",
+            "src": "teacher-1.jpg",
             "alt": ""
         },
         "visible": {
@@ -46,7 +46,7 @@ export const cards = [
     {
         "id": 2,
         "img": {
-            "src": "../../../assets/img/teacher/teacher-2.jpg",
+            "src": "teacher-2.jpg",
             "alt": ""
         },
         "visible": {
@@ -86,7 +86,7 @@ export const cards = [
     {
         "id": 3,
         "img": {
-            "src": "../../../assets/img/teacher/teacher-3.jpg",
+            "src": "teacher-3.jpg",
             "alt": ""
         },
         "visible": {
@@ -126,7 +126,7 @@ export const cards = [
     {
         "id": 4,
         "img": {
-            "src": "../../../assets/img/teacher/teacher-4.jpg",
+            "src": "teacher-4.jpg",
             "alt": ""
         },
         "visible": {
@@ -166,7 +166,7 @@ export const cards = [
     {
         "id": 5,
         "img": {
-            "src": "../../../assets/img/teacher/teacher-5.jpg",
+            "src": "teacher-5.jpg",
             "alt": ""
         },
         "visible": {

@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Card = ({feed}) => {
+    const img = require("../../../assets/img/blog/"+feed.img.src);
     return (
         <div className="single-blog mb-30">
             <div className="blog-img">
-                <a href={feed.href}><img src={feed.img.src} alt={feed.img.alt} /></a>
+                <a href={feed.href}><img src={img} alt={feed.img.alt} /></a>
             </div>
             <div className="blog-content-wrap">
                 <span>{feed.tag}</span>

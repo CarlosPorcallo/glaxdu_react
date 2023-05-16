@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Events = ({slide}) => {
+    const img = require("../../../assets/img/event/"+slide.img.src);
     return (
         <div className="single-event event-white-bg">
             <div className="event-img">
-                <a href={slide.href}><img src={slide.img.src} alt={slide.img.alt} /></a>
+                <a href={slide.href}><img src={img} alt={slide.img.alt} /></a>
                 <div className="event-date-wrap">
                     <span className="event-date">{slide.date.day}</span>
                     <span>{slide.date.month}</span>

@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const Courses = ({slide}) => {
+    const img = require("../../../assets/img/course/"+slide.img.src);
     return (
         <div className="single-course">
             <div className="course-img">
-                <Link to={slide.href}><img className="animated" src={slide.img.src} alt={slide.img.alt} /></Link>
-                <span>{slide.tag}</span>
+                <Link to={slide.href}><img className="animated" src={img} alt={slide.img.alt} /></Link>
+                {slide.tag !== undefined ? <span>{slide.tag}</span>: null}
             </div>
             <div className="course-content">
                 <h4><Link to={slide.href}>{slide.heading}</Link></h4>

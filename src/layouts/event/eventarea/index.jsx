@@ -5,7 +5,6 @@ import {caption, slides} from '../../../config/events';
 import SliderEvents from '../../slider/sliderevents';
 
 const EventArea = () => {
-    //  style="background-image:url();
     return (
         <div className="event-area bg-img default-overlay pt-130 pb-130" style={{backgroundImage: "../../../assets/img/bg/bg-3.jpg"}}>
             <div className="container">
@@ -14,7 +13,7 @@ const EventArea = () => {
                     <p>{caption}</p>
                 </div>
                 
-                <SliderEvents 
+                <SliderEvents
                     slides={slides}
                 />
             </div>

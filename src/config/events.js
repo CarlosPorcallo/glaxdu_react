@@ -13,7 +13,7 @@ export const slides = [
         "place": "Mascot Plaza ,Uttara",
         "hour": "11:00 am",
         "img": {
-            "src": "../../../assets/img/event/event-1.jpg",
+            "src": "event-1.jpg",
             "alt": ""
         },
         "date": {
@@ -31,7 +31,7 @@ export const slides = [
         "place": "Shubastu ,Dadda",
         "hour": "08:30 am",
         "img": {
-            "src": "../../../assets/img/event/event-2.jpg",
+            "src": "event-2.jpg",
             "alt": ""
         },
         "date": {
@@ -49,7 +49,7 @@ export const slides = [
         "place": "Banasree ,Rampura",
         "hour": "10:00 am",
         "img": {
-            "src": "../../../assets/img/event/event-3.jpg",
+            "src": "event-3.jpg",
             "alt": ""
         },
         "date": {
@@ -67,7 +67,7 @@ export const slides = [
         "place": "Shubastu ,Badda",
         "hour": "10:30 am",
         "img": {
-            "src": "../../../assets/img/event/event-2.jpg",
+            "src": "event-2.jpg",
             "alt": ""
         },
         "date": {

@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Card = ({slide}) => {
+    const img = require("../../../assets/img/teacher/"+slide.img.src);
     return (
         <div className="single-teacher mb-30">
             <div className="teacher-img">
-                <img src={slide.img.src} alt={slide.img.alt} />
+                <img src={img} alt={slide.img.alt} />
             </div>
             <div className="teacher-content-visible">
                 <h4>{slide.visible.name}</h4>
