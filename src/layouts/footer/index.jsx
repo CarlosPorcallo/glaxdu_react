@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import {company} from '../../config/footer';
 
 // layouts
-import SocialNetwork from '../../components/socialnetwork';
+import SocialNetwork from '../socialnetwork';
 import NewsLatter from '../../components/forms/newslatter';
 import AboutUsFooter from '../about/aboutusfooter';
 

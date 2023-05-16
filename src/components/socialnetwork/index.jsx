@@ -1,25 +1,19 @@
 import React from 'react';
-import {social} from '../../config/social';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-const SocialNetwork = () => {
+const SocialNetwork = ({social}) => {
     return (
-        <div className="col-lg-8 col-md-12">
-            <div className="footer-menu-social">
-                <div className="footer-menu">
-                    <ul>
-                        <li><a href="#">Privecy & Policy</a></li>
-                        <li><a href="#">Terms & Conditions of Use</a></li>
-                    </ul>
-                </div>
-                <div className="footer-social">
-                    <ul>
-                        {social.map((sn) => (
-                            <li><a className={sn.class} href={sn.href}><i className={sn.icon}></i></a></li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <ul>
+            {social.map((sn) => (
+                <li>
+                    <Link 
+                        className={sn.class} 
+                        to={sn.href}
+                    ><i className={sn.icon}></i>
+                    </Link>
+                </li>
+            ))}
+        </ul>
     );
 }
  

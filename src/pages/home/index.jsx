@@ -23,7 +23,7 @@ const Home = () => {
             <CourseArea />
             <TeacherArea />
             <EventArea />
-            <BlogArea />
+            <BlogArea title={true} />
             <Footer />
         </Fragment>
     );

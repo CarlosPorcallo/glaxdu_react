@@ -3,7 +3,7 @@ import {React, Fragment} from 'react';
 // components
 import Header from '../../../layouts/header';
 import BlogGrid from '../../../layouts/blog/bloggrid';
-import EventArea from '../../../layouts/event/eventarea3';
+import BlogArea from '../../../layouts/blog/blogarea2';
 import Footer from '../../../layouts/footer';
 
 const Blog = () => {
@@ -11,7 +11,7 @@ const Blog = () => {
         <Fragment>
             <Header />
             <BlogGrid />
-            <EventArea />
+            <BlogArea />
             <Footer />
         </Fragment>
     );

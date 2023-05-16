@@ -3,7 +3,7 @@ import React from 'react';
 // components
 import HeaderGrid from '../../../components/headergrid';
 
-const About2 = () => {
+const AboutUsGrid = () => {
     const current_page = "About Page"
     const heading = "About Us";
     const caption = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .";
@@ -22,4 +22,4 @@ const About2 = () => {
     );
 }
  
-export default About2;
+export default AboutUsGrid;

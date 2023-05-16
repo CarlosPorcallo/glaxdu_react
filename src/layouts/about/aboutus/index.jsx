@@ -6,6 +6,7 @@ import {width, height, video_src, presentacion1} from '../../../config/about';
 
 // components
 import Video from '../../../components/video';
+import {about1} from '../../../config/about';
 
 const AboutUs = () => {
     return (
@@ -16,7 +17,7 @@ const AboutUs = () => {
                         <div className="about-content">
                             <div className="section-title section-title-green mb-30">
                                 <h2>About <span>Us</span></h2>
-                                {presentacion1.map((linea) => (
+                                {about1.map((linea) => (
                                     <p>{linea}</p>
                                 ))}
                             </div>

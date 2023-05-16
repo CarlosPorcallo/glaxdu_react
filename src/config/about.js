@@ -1,8 +1,11 @@
 // constantes
-export const presentacion1 = [
+export const about1 = [
     "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
     "Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven  iam, quis nostrud exer citation ullamco laboris nisi ut perspiciatis unde omnis iste natus error sit voluptate." 
 ];
+
+// banners
+export const about_banner = "banner-4.jpg";
 
 // video
 export const width="560"

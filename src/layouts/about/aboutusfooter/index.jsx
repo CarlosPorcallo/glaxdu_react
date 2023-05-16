@@ -2,7 +2,6 @@ import React from 'react';
 
 // settings
 import {email_contact, phone} from '../../../config/header';
-//import {} from '../../../config/footer';
 
 const AboutUsFooter = () => {
     return (
