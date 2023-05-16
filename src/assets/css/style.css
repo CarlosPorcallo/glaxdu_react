@@ -4739,9 +4739,6 @@ textarea:focus {
 }
 
 /*--------- 10. Event area ---------*/
-.event-area{
-  background-image:url(../../assets/img/bg/bg-3.jpg);
-}
 .event-area.default-overlay:before {
   background-color: #fefefe;
   opacity: 0.5;

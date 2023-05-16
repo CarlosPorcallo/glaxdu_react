@@ -1,4 +1,5 @@
 import {React, Fragment} from 'react';
+import {slides} from '../../config/home';
 
 // layouts
 import Header from '../../layouts/header';
@@ -16,7 +17,7 @@ const Home = () => {
     return (
         <Fragment>
             <Header />
-            <Slider />
+            <Slider slides={slides} />
             <ChoseUs />
             <AboutUs />
             <CourseArea />
