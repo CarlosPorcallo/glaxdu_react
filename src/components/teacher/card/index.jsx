@@ -16,12 +16,12 @@ const Card = ({slide}) => {
                     <h4>{slide.content.name}</h4>
                     <h5>{slide.content.role}</h5>
                     {slide.paragraphs.map((p) => (
-                        <p>{p}</p>
+                        <p key={Math.random()}>{p}</p>
                     ))}
                     <div className="teacher-social">
                         <ul>
                             {slide.social.map((social) => (
-                                <li><a className={social.className} href={social.href}><i className={social.icon}></i></a></li>
+                                <li key={Math.random()}><a className={social.className} href={social.href}><i className={social.icon}></i></a></li>
                             ))}
                         </ul>
                     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavMenu = ({className, paths}) => {
     
@@ -8,11 +8,11 @@ const NavMenu = ({className, paths}) => {
             {
                 paths.map((path) => (
                     (path.submenu ? 
-                        <li><a href={path.href}> {path.name} <i className="fa fa-angle-down"></i> </a>
+                        <li key={Math.random()}><Link to={path.href}> {path.name} <i className="fa fa-angle-down"></i> </Link>
                             <ul className="submenu">
                                 {
                                     path.paths.map((p) => (
-                                        <li><Link to={p.href}>{p.name}</Link></li>
+                                        <li key={Math.random()}><Link to={p.href}>{p.name}</Link></li>
                                     ))
                                 }
                             </ul>

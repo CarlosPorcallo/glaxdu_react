@@ -1,5 +1,5 @@
 import {React, Fragment} from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // settings
 import {company} from '../../config/footer';

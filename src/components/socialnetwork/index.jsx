@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SocialNetwork = ({social}) => {
     return (
         <ul>
             {social.map((sn) => (
-                <li>
+                <li key={Math.random()}>
                     <Link 
                         className={sn.class} 
                         to={sn.href}

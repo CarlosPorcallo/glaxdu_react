@@ -12,7 +12,10 @@ const RecentPostSidebar = () => {
             </div>
             <div class="recent-post-wrap">
                 {posts.slice(0, recents_limit).map((post) => (
-                    <SideCard post={post} />
+                    <SideCard 
+                        key={Math.random()}
+                        post={post} 
+                    />
                 ))}
             </div>
         </div>

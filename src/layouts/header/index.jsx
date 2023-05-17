@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import './index.css';
 import { email_contact, phone, paths, header_img } from '../../config/header.js';
 
+// components
 import NavMenu from '../../components/navmenu';
 
 const Header = () => {

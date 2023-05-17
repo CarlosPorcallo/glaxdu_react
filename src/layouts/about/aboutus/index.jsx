@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // config
-import {width, height, video_src, presentacion1} from '../../../config/about';
+import {width, height, video_src} from '../../../config/about';
 
 // components
 import Video from '../../../components/video';
@@ -18,7 +18,7 @@ const AboutUs = () => {
                             <div className="section-title section-title-green mb-30">
                                 <h2>About <span>Us</span></h2>
                                 {about1.map((linea) => (
-                                    <p>{linea}</p>
+                                    <p key={Math.random()}>{linea}</p>
                                 ))}
                             </div>
                             <div className="about-btn mt-45">

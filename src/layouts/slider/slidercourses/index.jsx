@@ -19,7 +19,8 @@ const SliderCourses = ({slides}) => {
                 loop={settings_courses.loop}
             >
                 {slides.map((slide) => (
-                    <SlideCourses 
+                    <SlideCourses
+                        key={Math.random()} 
                         slide={slide}
                     />
                 ))}

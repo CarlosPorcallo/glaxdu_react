@@ -12,7 +12,7 @@ const Card = ({feed}) => {
                 <div className="blog-content">
                     <h4><a href={feed.href}>{feed.heading}</a></h4>
                     {feed.paragraphs.map((p) => (
-                        <p>{p}</p>
+                        <p key={Math.random()}>{p}</p>
                     ))}
                     <div className="blog-meta">
                         <ul>

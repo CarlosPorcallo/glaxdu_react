@@ -19,7 +19,8 @@ const SliderHome = ({slides}) => {
                 loop={settings_home.loop}
             >
                 {slides.map((slide) => (
-                    <SlideHome 
+                    <SlideHome
+                        key={Math.random()}
                         slide={slide}
                     />
                 ))}

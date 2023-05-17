@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SideCard = ({post}) => {
     const img = require('../../../assets/img/blog/'+post.img.src);
@@ -13,7 +13,7 @@ const SideCard = ({post}) => {
                 <h5><a href="#">{post.heading}</a></h5>
                 <span>{post.tag}</span>
                 {post.paragraphs.map((p) => (
-                    <p>{p}</p>
+                    <p key={Math.random()}>{p}</p>
                 ))}
             </div>
         </div>

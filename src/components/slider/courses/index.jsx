@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Courses = ({slide}) => {
     const img = require("../../../assets/img/course/"+slide.img.src);
@@ -12,7 +12,7 @@ const Courses = ({slide}) => {
             <div className="course-content">
                 <h4><Link to={slide.href}>{slide.heading}</Link></h4>
                 {slide.paragraphs.map((p) => (
-                    <p>{p}</p>
+                    <p key={Math.random()}>{p}</p>
                 ))}
             </div>
             <div className="course-position-content">

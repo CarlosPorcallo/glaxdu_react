@@ -20,6 +20,7 @@ const SliderEvents = ({slides}) => {
             >
                 {slides.map((slide) => (
                     <SlideEvent
+                        key={Math.random()}
                         slide={slide}
                     />
                 ))}

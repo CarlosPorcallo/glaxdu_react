@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = ({slide}) => {
     return (
@@ -10,12 +10,16 @@ const Home = ({slide}) => {
                         <div className="slider-content slider-animated-1 pt-230">
                             <h1 className="animated">{slide.heading}</h1>
                             {slide.paragraphs.map((p) => (
-                                <p className="animated">{p}</p>
+                                <p
+                                    key={Math.random()} 
+                                    className="animated"
+                                >{p}</p>
                             ))}
 
                             <div className="slider-btn">
                                 {slide.buttons.map((btn) => (
                                     <Link 
+                                        key={Math.random()}
                                         to={btn.href}
                                         className={btn.className}
                                     >

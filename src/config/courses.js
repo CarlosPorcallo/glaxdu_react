@@ -1,8 +1,40 @@
 // constantes
 export const caption = "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.";
+export const img_background = "../../../assets/img/bg/bg-1.jpg";
 
-// slides
-export const slides = [
+// settings
+export const recents_limit = 2;
+
+// mock data
+export const category_list = [
+    {
+        "href": "#",
+        "category": "MBA",
+        "count": "04"
+    },
+    {
+        "href": "#",
+        "category": "Graduate",
+        "count": "08"
+    },
+    {
+        "href": "#",
+        "category": "Under Graduate",
+        "count": "04"
+    },
+    {
+        "href": "#",
+        "category": "BBA",
+        "count": "06"
+    },
+    {
+        "href": "#",
+        "category": "Engineering",
+        "count": "04"
+    }
+];
+
+export const courses = [
     {
         "id": 1,
         "heading": "Apparel Manufacturing",

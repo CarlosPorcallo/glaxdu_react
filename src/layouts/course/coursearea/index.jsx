@@ -1,12 +1,12 @@
 import React from 'react';
-import {caption, slides} from '../../../config/courses';
+import {caption, courses, img_background} from '../../../config/courses';
 
 // components
 import SliderCourses from '../../slider/slidercourses';
 
 const CourseArea = () => {
     return (
-        <div className="course-area bg-img pt-130 pb-10" style={{backgroundImage: "../../../assets/img/bg/bg-1.jpg"}}>
+        <div className="course-area bg-img pt-130 pb-10" style={{backgroundImage: img_background}}>
             <div className="container">
                 <div className="section-title mb-75">
                     <h2> <span>Our</span> Courses</h2>
@@ -14,7 +14,7 @@ const CourseArea = () => {
                 </div>
 
                 <SliderCourses 
-                    slides={slides}
+                    slides={courses}
                 />
             </div>
         </div>

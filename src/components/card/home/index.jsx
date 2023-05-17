@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({className, icon, heading, paragraphs}) => {
-    const img = require("../../assets/img/icon-img/"+icon);
+    const img = require("../../../assets/img/icon-img/"+icon);
     return (
         <div className={className}>
             <div className="choose-img">
@@ -10,7 +10,7 @@ const Card = ({className, icon, heading, paragraphs}) => {
             <div className="choose-content">
                 <h3>{heading}</h3>
                 {paragraphs.map((p) => (
-                    <p>{p}</p>
+                    <p key={Math.random()}>{p}</p>
                 ))}
             </div>
         </div>

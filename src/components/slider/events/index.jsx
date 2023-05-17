@@ -14,7 +14,7 @@ const Events = ({slide}) => {
             <div className="event-content">
                 <h3><a href={slide.href}>{slide.heading}</a></h3>
                 {slide.paragraphs.map((p) => (
-                    <p>{p}</p>
+                    <p key={Math.random()}>{p}</p>
                 ))}
                 <div className="event-meta-wrap">
                     <div className="event-meta">

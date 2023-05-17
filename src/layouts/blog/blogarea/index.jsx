@@ -18,10 +18,11 @@ const BlogArea = ({title}) => {
                 }
                 <div className="row">
                     {posts.map((feed) => (
-                        <div className="col-lg-3 col-md-6">
-                            <Card 
-                                feed={feed}
-                            />
+                        <div
+                            key={Math.random()} 
+                            className="col-lg-3 col-md-6"
+                        >
+                            <Card feed={feed} />
                         </div>
                     ))}
                 </div>

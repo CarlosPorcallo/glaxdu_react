@@ -14,7 +14,7 @@ const AboutUsSidebar = () => {
             </div>
 
             {about1.map((p) => (
-                <p>{p}<br /><br /></p>
+                <p key={Math.random()}>{p}<br /><br /></p>
             ))}
             <a href={about_banner.href}><img src={img} alt={about_banner.alt} /></a>
             <div class="sidebar-social">

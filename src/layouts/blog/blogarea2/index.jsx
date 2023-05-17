@@ -17,10 +17,11 @@ const BlogArea2 = () => {
                         <div class="blog-all-wrap mr-40">
                             <div className="row">
                                 {posts.map((feed) => (
-                                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <Card 
-                                            feed={feed}
-                                        />
+                                    <div 
+                                        key={Math.random()}
+                                        className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12"
+                                    >
+                                        <Card feed={feed} />
                                     </div>
                                 ))}
                             </div>

@@ -39,8 +39,11 @@ const BrandLogoArea = () => {
             <div className="container">
                 <div className="brand-logo">
                     {
-                        brands.map((brand, $index) =>
-                            <div className="single-brand-logo" key={brand.href+$index}>
+                        brands.map((brand) =>
+                            <div 
+                                key={Math.random()}
+                                className="single-brand-logo" 
+                            >
                                 <a href={brand.href}><img src={brand.src} alt={brand.alt} /></a>
                             </div>
                         )
