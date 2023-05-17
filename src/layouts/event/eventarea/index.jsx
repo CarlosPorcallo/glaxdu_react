@@ -2,7 +2,7 @@ import React from 'react';
 import {caption, slides} from '../../../config/events';
 
 // layouts
-import SliderEvents from '../../slider/sliderevents';
+import SliderEvents from '../../../components/slider/events';
 
 const EventArea = () => {
     return (

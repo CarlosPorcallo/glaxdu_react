@@ -1,40 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import {settings_courses} from '../../../config/slider';
 
-const Courses = ({slide}) => {
-    const img = require("../../../assets/img/course/"+slide.img.src);
+// components
+import SlideCourses from '../../../components/slides/courses';
+
+const SliderCourses = ({slides}) => {
     return (
-        <div className="single-course">
-            <div className="course-img">
-                <Link to={slide.href}><img className="animated" src={img} alt={slide.img.alt} /></Link>
-                {slide.tag !== undefined ? <span>{slide.tag}</span>: null}
-            </div>
-            <div className="course-content">
-                <h4><Link to={slide.href}>{slide.heading}</Link></h4>
-                {slide.paragraphs.map((p) => (
-                    <p key={Math.random()}>{p}</p>
+        <div className="slider-area">
+            <OwlCarousel
+                items={settings_courses.slides}
+                className={settings_courses.theme}
+                nav={settings_courses.nav}
+                dots={settings_courses.dots}
+                margin={settings_courses.margin}
+                autoplay={settings_courses.autoplay}
+                loop={settings_courses.loop}
+            >
+                {slides.map((slide) => (
+                    <SlideCourses
+                        key={Math.random()} 
+                        slide={slide}
+                    />
                 ))}
-            </div>
-            <div className="course-position-content">
-                <div className="credit-duration-wrap">
-                    <div className="sin-credit-duration">
-                        <i className="fa fa-diamond"></i>
-                        <span>Credits : {slide.credits}</span>
-                    </div>
-                    <div className="sin-credit-duration">
-                        <i className="fa fa-clock-o"></i>
-                        <span>Duration : {slide.duration}</span>
-                    </div>
-                </div>
-                <div className="course-btn">
-                    <Link
-                        className={slide.button.className}
-                        to={slide.button.href}
-                    >{slide.button.name}</Link>
-                </div>
-            </div>
+            </OwlCarousel>
         </div>
     );
 }
  
-export default Courses;
+export default SliderCourses;

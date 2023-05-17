@@ -2,7 +2,7 @@ import React from 'react';
 import {caption, courses, img_background} from '../../../config/courses';
 
 // components
-import SliderCourses from '../../slider/slidercourses';
+import SliderCourses from '../../../components/slider/courses';
 
 const CourseArea = () => {
     return (

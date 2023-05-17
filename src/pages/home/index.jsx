@@ -3,7 +3,7 @@ import {slides} from '../../config/home';
 
 // layouts
 import Header from '../../layouts/header';
-import Slider from '../../layouts/slider/sliderhome';
+import Slider from '../../components/slider/home';
 import ChoseUs from '../../layouts/chose/cards';
 import AboutUs from '../../layouts/about/aboutus';
 import CourseArea from '../../layouts/course/coursearea';

@@ -7617,8 +7617,10 @@ textarea:focus {
   color: #fff;
   background-color: #00a651;
 }
+.blog-comment-btn {
+  margin: 30px 0;
+}
 .blog-comment .blog-comment-content-wrap {
-  display: none;
   padding: 50px 30px;
   -webkit-box-shadow: 0 0px 12px 0.8px rgba(225, 225, 225, 0.3);
           box-shadow: 0 0px 12px 0.8px rgba(225, 225, 225, 0.3);
@@ -7632,6 +7634,9 @@ textarea:focus {
   margin: 0 0 27px;
   font-size: 24px;
   font-weight: bold;
+}
+.single-blog-comment {
+  margin-bottom: 10px;
 }
 .blog-comment .blog-comment-content-wrap .single-blog-comment {
   display: -webkit-box;

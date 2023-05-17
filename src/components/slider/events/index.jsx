@@ -1,34 +1,32 @@
 import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import {settings_events} from '../../../config/slider';
 
-const Events = ({slide}) => {
-    const img = require("../../../assets/img/event/"+slide.img.src);
+// components
+import SlideEvent from '../../../components/slides/events';
+
+const SliderEvents = ({slides}) => {
     return (
-        <div className="single-event event-white-bg">
-            <div className="event-img">
-                <a href={slide.href}><img src={img} alt={slide.img.alt} /></a>
-                <div className="event-date-wrap">
-                    <span className="event-date">{slide.date.day}</span>
-                    <span>{slide.date.month}</span>
-                </div>
-            </div>
-            <div className="event-content">
-                <h3><a href={slide.href}>{slide.heading}</a></h3>
-                {slide.paragraphs.map((p) => (
-                    <p key={Math.random()}>{p}</p>
+        <div className="slider-area">
+            <OwlCarousel
+                items={settings_events.slides}
+                className={settings_events.theme}
+                nav={settings_events.nav}
+                dots={settings_events.dots}
+                margin={settings_events.margin}
+                autoplay={settings_events.autoplay}
+                loop={settings_events.loop}
+            >
+                {slides.map((slide) => (
+                    <SlideEvent
+                        key={Math.random()}
+                        slide={slide}
+                    />
                 ))}
-                <div className="event-meta-wrap">
-                    <div className="event-meta">
-                        <i className="fa fa-location-arrow"></i>
-                        <span>{slide.place}</span>
-                    </div>
-                    <div className="event-meta">
-                        <i className="fa fa-clock-o"></i>
-                        <span>{slide.hour}</span>
-                    </div>
-                </div>
-            </div>
+            </OwlCarousel>
         </div>
     );
 }
  
-export default Events;
+export default SliderEvents;
