@@ -1,57 +1,16 @@
 import React from 'react';
 
-const BrandLogoArea = () => {
-    const brands = [
-        {
-            "href": "/home",
-            "src": "../assets/img/brand-logo/1.png",
-            "alt": ""
-        },
-        {
-            "href": "/home",
-            "src": "../assets/img/brand-logo/2.png",
-            "alt": ""
-        },
-        {
-            "href": "/home",
-            "src": "../assets/img/brand-logo/3.png",
-            "alt": ""
-        },
-        {
-            "href": "/home",
-            "src": "../assets/img/brand-logo/4.png",
-            "alt": ""
-        },
-        {
-            "href": "/home",
-            "src": "../assets/img/brand-logo/5.png",
-            "alt": ""
-        },
-        {
-            "href": "/home",
-            "src": "../assets/img/brand-logo/6.png",
-            "alt": ""
-        }
-    ];
+// components
+import SliderBranding from '../../../components/slider/branding';
 
+const BrandLogoArea = ({brands}) => {
     return (
-        <div className="brand-logo-area pt-45 pb-130">
+        <div className="brand-logo-area pb-130">
             <div className="container">
-                <div className="brand-logo">
-                    {
-                        brands.map((brand) =>
-                            <div 
-                                key={Math.random()}
-                                className="single-brand-logo" 
-                            >
-                                <a href={brand.href}><img src={brand.src} alt={brand.alt} /></a>
-                            </div>
-                        )
-                    }
-                </div>
+                <SliderBranding slides={brands} />
             </div>
         </div>
     );
 }
- 
+
 export default BrandLogoArea;

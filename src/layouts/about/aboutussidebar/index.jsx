@@ -1,6 +1,6 @@
 import React from 'react';
 import {social} from '../../../config/social';
-import {about1, about_banner} from '../../../config/about'; 
+import {about, about_banner} from '../../../config/about'; 
 
 // components
 import SocialNetwork from '../../../components/socialnetwork';
@@ -13,7 +13,7 @@ const AboutUsSidebar = () => {
                 <h4>About Us</h4>
             </div>
 
-            {about1.map((p) => (
+            {about.map((p) => (
                 <p key={Math.random()}>{p}<br /><br /></p>
             ))}
             <a href={about_banner.href}><img src={img} alt={about_banner.alt} /></a>

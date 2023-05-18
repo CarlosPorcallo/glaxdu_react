@@ -1,7 +1,7 @@
 import {React, Fragment} from 'react';
 
 import Header from '../../layouts/header';
-import AboutUs2Grid from '../../layouts/about/aboutusgrid';
+import AboutUsGrid from '../../layouts/about/aboutusgrid';
 import ChooseArea from '../../layouts/chose/choosearea';
 import Video from '../../components/video';
 import TeacherArea from '../../layouts/teacher/teacherarea';
@@ -12,7 +12,7 @@ const About = () => {
     return (
         <Fragment>
             <Header />
-            <AboutUs2Grid />
+            <AboutUsGrid />
             <ChooseArea />
             <Video />
             <TeacherArea />

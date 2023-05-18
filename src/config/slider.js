@@ -26,3 +26,12 @@ export const settings_events = {
     autoplay: true,
     loop: true
 };
+export const settings_brands = {
+    slides: 6,
+    theme: "",
+    nav: false,
+    dots: false,
+    margin: 8,
+    autoplay: true,
+    loop: true
+};

@@ -1,5 +1,6 @@
 import {React, Fragment} from 'react';
-import {slides} from '../../config/home';
+import {slides, courses_heading} from '../../config/home';
+import {caption, courses, img_background} from '../../config/courses';
 
 // layouts
 import Header from '../../layouts/header';
@@ -20,7 +21,11 @@ const Home = () => {
             <Slider slides={slides} />
             <ChoseUs />
             <AboutUs />
-            <CourseArea />
+            <CourseArea
+                caption={caption}
+                courses={courses}
+                img_background={img_background}
+            />
             <TeacherArea />
             <EventArea />
             <BlogArea title={true} />

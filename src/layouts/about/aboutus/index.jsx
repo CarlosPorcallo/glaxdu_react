@@ -6,7 +6,7 @@ import {width, height, video_src} from '../../../config/about';
 
 // components
 import Video from '../../../components/video';
-import {about1} from '../../../config/about';
+import {about} from '../../../config/about';
 
 const AboutUs = () => {
     return (
@@ -17,7 +17,7 @@ const AboutUs = () => {
                         <div className="about-content">
                             <div className="section-title section-title-green mb-30">
                                 <h2>About <span>Us</span></h2>
-                                {about1.map((linea) => (
+                                {about.map((linea) => (
                                     <p key={Math.random()}>{linea}</p>
                                 ))}
                             </div>

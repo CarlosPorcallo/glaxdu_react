@@ -1,6 +1,10 @@
 // constantes
 export const caption = "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.";
 export const img_background = "../../../assets/img/bg/bg-1.jpg";
+export const heading_courses_home = {
+        "text": "Our Courses",
+        "type": "odd" // odd - even
+};
 
 // settings
 export const recents_limit = 2;
