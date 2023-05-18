@@ -1,9 +1,13 @@
 import React from 'react';
 
+// components
+import SliderCourses from '../../../components/slider/courses';
+
 // layouts
 import Sidebar from '../../sidebar';
 
-const CourseDetailsArea = () => {
+const CourseDetailsArea = ({course, courses}) => {
+    const img_banner = require('../../../assets/img/banner/'+course.img_background.src);
     return (
         <div className="course-details-area pt-130">
             <div className="container">
@@ -11,7 +15,7 @@ const CourseDetailsArea = () => {
                     <div className="col-xl-9 col-lg-8">
                         <div className="course-left-wrap mr-40">
                             <div className="apply-area">
-                                <img src="../assets/img/banner/course-details.jpg" alt="" />
+                                <img src={img_banner} alt={course.img_background.alt} />
                                 <div className="course-apply-btn">
                                     <a href="#" className="default-btn">APPLY NOW</a>
                                 </div>
@@ -237,104 +241,9 @@ const CourseDetailsArea = () => {
                                     <h3>Related Course</h3>
                                     <p>Hempor incididunt ut labore et dolore mm, itation ullamco laboris <br />nisi ut aliquip. </p>
                                 </div>
-                                <div className="related-slider-active">
-                                    <div className="single-course">
-                                        <div className="course-img">
-                                            <a href="#"><img className="animated" src="../assets/img/course/related-course-1.jpg" alt="" /></a>
-                                        </div>
-                                        <div className="course-content">
-                                            <h4><a href="#">Apparel Manufacturing</a></h4>
-                                            <p>magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.</p>
-                                        </div>
-                                        <div className="course-position-content">
-                                            <div className="credit-duration-wrap">
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-diamond"></i>
-                                                    <span>Credits : 125</span>
-                                                </div>
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-clock-o"></i>
-                                                    <span>Duration : 4yrs</span>
-                                                </div>
-                                            </div>
-                                            <div className="course-btn">
-                                                <a className="default-btn" href="#">APPLY NOW</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="single-course">
-                                        <div className="course-img">
-                                            <a href="#"><img className="animated" src="../assets/img/course/related-course-2.jpg" alt="" /></a>
-                                        </div>
-                                        <div className="course-content">
-                                            <h4><a href="#">Grphic Design & Multimedia</a></h4>
-                                            <p>magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.</p>
-                                        </div>
-                                        <div className="course-position-content">
-                                            <div className="credit-duration-wrap">
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-diamond"></i>
-                                                    <span>Credits : 125</span>
-                                                </div>
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-clock-o"></i>
-                                                    <span>Duration : 4yrs</span>
-                                                </div>
-                                            </div>
-                                            <div className="course-btn">
-                                                <a className="default-btn" href="#">APPLY NOW</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="single-course">
-                                        <div className="course-img">
-                                            <a href="#"><img className="animated" src="../assets/img/course/related-course-3.jpg" alt="" /></a>
-                                        </div>
-                                        <div className="course-content">
-                                            <h4><a href="#">Fashion & Technology</a></h4>
-                                            <p>magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.</p>
-                                        </div>
-                                        <div className="course-position-content">
-                                            <div className="credit-duration-wrap">
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-diamond"></i>
-                                                    <span>Credits : 125</span>
-                                                </div>
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-clock-o"></i>
-                                                    <span>Duration : 4yrs</span>
-                                                </div>
-                                            </div>
-                                            <div className="course-btn">
-                                                <a className="default-btn" href="#">APPLY NOW</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="single-course">
-                                        <div className="course-img">
-                                            <a href="#"><img className="animated" src="../assets/img/course/related-course-2.jpg" alt="" /></a>
-                                        </div>
-                                        <div className="course-content">
-                                            <h4><a href="#">Fashion & Technology</a></h4>
-                                            <p>magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.</p>
-                                        </div>
-                                        <div className="course-position-content">
-                                            <div className="credit-duration-wrap">
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-diamond"></i>
-                                                    <span>Credits : 125</span>
-                                                </div>
-                                                <div className="sin-credit-duration">
-                                                    <i className="fa fa-clock-o"></i>
-                                                    <span>Duration : 4yrs</span>
-                                                </div>
-                                            </div>
-                                            <div className="course-btn">
-                                                <a className="default-btn" href="#">APPLY NOW</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                <SliderCourses slides={courses} />
+                                
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,7 @@
 import {React, Fragment} from 'react';
-import {detail_post} from '../../../config/blog';
+
+// middleware
+import {getDetailPost} from '../../../middleware/blog';
 
 // layouts
 import Header from '../../../layouts/header';
@@ -8,6 +10,7 @@ import Detail from '../../../layouts/blog/blogdetail';
 import BlogDetailGrid from '../../../layouts/blog/blogdetailgrid';
 
 const BlogDetail = () => {
+    const detail_post = getDetailPost();
     return (
         <Fragment>
             <Header />

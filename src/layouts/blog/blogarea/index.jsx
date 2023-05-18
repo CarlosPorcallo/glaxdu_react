@@ -1,10 +1,9 @@
 import React from 'react';
-import {caption, posts} from '../../../config/blog';
 
 // components
 import Card from '../../../components/blog/card';
 
-const BlogArea = ({title}) => {
+const BlogArea = ({title, caption, posts}) => {
 
     return (
         <div className="blog-area pt-130 pb-100">

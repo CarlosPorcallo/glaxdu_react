@@ -2,7 +2,7 @@ import {React, Fragment} from 'react';
 
 import Header from '../../../layouts/header';
 import EventGrid from '../../../layouts/event/eventgrid';
-import EventArea2 from '../../../layouts/event/eventarea2';
+import EventArea from '../../../layouts/event/eventarea';
 import Footer from '../../../layouts/footer';
 
 const Event = () => {
@@ -10,7 +10,7 @@ const Event = () => {
         <Fragment>
             <Header />
             <EventGrid />
-            <EventArea2 />
+            <EventArea />
             <Footer />
         </Fragment>
     );

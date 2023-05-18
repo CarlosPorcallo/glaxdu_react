@@ -1,6 +1,7 @@
 // constantes
 export const caption = "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.";
 export const img_background = "../../../assets/img/bg/bg-1.jpg";
+export const img_background_details = "course-details.jpg";
 export const heading_courses_home = {
         "text": "Our Courses",
         "type": "odd" // odd - even
@@ -53,9 +54,13 @@ export const courses = [
             "src": "course-1.jpg", 
             "alt": ""
         },
+        "img_background": {
+            "src": "course-details.jpg", 
+            "alt": ""
+        },
         "button": {
             "className": "default-btn",
-            "href": "·",
+            "href": "#",
             "name": "APPLY NOW"
         }        
     },
@@ -72,9 +77,13 @@ export const courses = [
             "src": "course-2.jpg", 
             "alt": ""
         },
+        "img_background": {
+            "src": "course-details.jpg", 
+            "alt": ""
+        },
         "button": {
             "className": "default-btn",
-            "href": "·",
+            "href": "#",
             "name": "APPLY NOW"
         }      
     },
@@ -91,9 +100,13 @@ export const courses = [
             "src": "course-3.jpg", 
             "alt": ""
         },
+        "img_background": {
+            "src": "course-details.jpg", 
+            "alt": ""
+        },
         "button": {
             "className": "default-btn",
-            "href": "·",
+            "href": "#",
             "name": "APPLY NOW"
         }   
     },
@@ -108,12 +121,16 @@ export const courses = [
         "duration": "4yrs",
         "href": "/course/detail/4",
         "img": {
-            "src": "course-4.jpg",
+            "src": "course-3.jpg",
+            "alt": ""
+        },
+        "img_background": {
+            "src": "course-details.jpg",
             "alt": ""
         },
         "button": {
             "className": "default-btn",
-            "href": "·",
+            "href": "#",
             "name": "APPLY NOW"
         }   
     },
@@ -130,9 +147,13 @@ export const courses = [
             "src": "course-2.jpg",
             "alt": ""
         },
+        "img_background": {
+            "src": "course-details.jpg",
+            "alt": ""
+        },
         "button": {
             "className": "default-btn",
-            "href": "·",
+            "href": "#",
             "name": "APPLY NOW"
         }
     }

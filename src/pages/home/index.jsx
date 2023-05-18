@@ -1,6 +1,9 @@
 import {React, Fragment} from 'react';
-import {slides, courses_heading} from '../../config/home';
-import {caption, courses, img_background} from '../../config/courses';
+
+// middleware
+import {getSlides} from '../../middleware/home';
+import {getCaptionCourses, getImgBackground, getCourses} from '../../middleware/courses';
+import {getCaptionBlog, getPosts} from '../../middleware/blog';
 
 // layouts
 import Header from '../../layouts/header';
@@ -15,6 +18,15 @@ import BlogArea from '../../layouts/blog/blogarea';
 import Footer from '../../layouts/footer';
 
 const Home = () => {
+    // slider principal
+    const slides = getSlides();
+    // cursos
+    const captionCourses = getCaptionCourses();
+    const img_background = getImgBackground();
+    const courses = getCourses();
+    // blog
+    const captionBlog = getCaptionBlog();
+    const posts = getPosts();
     return (
         <Fragment>
             <Header />
@@ -22,13 +34,17 @@ const Home = () => {
             <ChoseUs />
             <AboutUs />
             <CourseArea
-                caption={caption}
+                caption={captionCourses}
                 courses={courses}
                 img_background={img_background}
             />
             <TeacherArea />
             <EventArea />
-            <BlogArea title={true} />
+            <BlogArea 
+                title={true}
+                caption={captionBlog}
+                posts={posts}
+            />
             <Footer />
         </Fragment>
     );
