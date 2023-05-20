@@ -1,10 +1,10 @@
 import React from 'react';
-import {social} from '../../config/social';
+//import {social} from '../../config/social';
 
 // components
 import Social from '../../components/socialnetwork';
 
-const SocialNetwork = () => {
+const SocialNetwork = ({social}) => {
     return (
         <div className="col-lg-8 col-md-12">
             <div className="footer-menu-social">

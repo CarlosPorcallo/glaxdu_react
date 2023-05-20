@@ -1,6 +1,10 @@
 // constantes
 export const email_contact= "education@email.com";
 export const phone= "+987 558 547 589";
+export const about_caption = [
+    "Ugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu."
+];
+export const user_contact = "Uttara, Dhaka, Bangladesh";
 export const header_img= "../assets/img/icon-img/header-shape.png";
 // rutas de la barra de navegación
 export const paths= [

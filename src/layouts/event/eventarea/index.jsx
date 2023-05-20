@@ -1,10 +1,9 @@
 import React from 'react';
-import {caption, slides} from '../../../config/events';
 
 // layouts
 import SliderEvents from '../../../components/slider/events';
 
-const EventArea = () => {
+const EventArea = ({caption, slides}) => {
     return (
         <div className="event-area bg-img default-overlay pt-130 pb-130" style={{backgroundImage: "../../../assets/img/bg/bg-3.jpg"}}>
             <div className="container">

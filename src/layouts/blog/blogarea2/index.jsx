@@ -1,5 +1,4 @@
 import React from 'react';
-import {posts} from '../../../config/blog';
 
 // components
 import Card from '../../../components/blog/card';
@@ -8,7 +7,7 @@ import Paginator from '../../../components/paginator';
 // layouts
 import Sidebar from '../../sidebar';
 
-const BlogArea2 = () => {
+const BlogArea2 = ({posts}) => {
     return (
         <div class="event-area pt-130 pb-130">
             <div class="container">

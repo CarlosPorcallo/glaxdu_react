@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// config
-import {width, height, video_src} from '../../../config/about';
-
 // components
 import Video from '../../../components/video';
-import {about} from '../../../config/about';
 
-const AboutUs = () => {
+const AboutUs = ({about, width, height, video_src}) => {
     return (
         <div className="about-us pt-130 pb-130">
             <div className="container">

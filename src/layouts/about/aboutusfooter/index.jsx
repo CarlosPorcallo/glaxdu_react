@@ -1,20 +1,26 @@
 import React from 'react';
 
-// settings
-import {email_contact, phone} from '../../../config/header';
+// middleware
+import {getEmailContact, getPhone, getAboutCaption, getUserContact} from '../../../middleware/getters/header';
 
 const AboutUsFooter = () => {
+    const email_contact = getEmailContact();
+    const phone = getPhone();
+    const about_caption = getAboutCaption();
+    const user_contact = getUserContact();
     return (
         <div className="footer-widget mb-40">
             <div className="footer-title">
                 <h4>ABOUT US</h4>
             </div>
             <div className="footer-about">
-                <p>Ugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natu</p>
+                {about_caption.map((p) => (
+                    <p>{p}</p>
+                ))}
                 <div className="f-contact-info">
                     <div className="single-f-contact-info">
                         <i className="fa fa-home"></i>
-                        <span>Uttara, Dhaka, Bangladesh</span>
+                        <span>{user_contact}</span>
                     </div>
                     <div className="single-f-contact-info">
                         <i className="fa fa-envelope-o"></i>

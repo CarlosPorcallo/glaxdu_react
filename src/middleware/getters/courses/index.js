@@ -1,5 +1,5 @@
 // trayendo la mock data
-import {courses, caption, img_background} from '../../config/courses';
+import {courses, caption, img_background} from '../../../config/courses';
 
 // sección home
 export const getCaptionCourses = () => {

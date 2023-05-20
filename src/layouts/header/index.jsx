@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import './index.css';
-import { email_contact, phone, paths, header_img } from '../../config/header.js';
+//import { email_contact, phone, paths, header_img } from '../../config/header.js';
 
 // components
 import NavMenu from '../../components/navmenu';
 
-const Header = () => {
+const Header = ({email_contact, phone, paths, header_img, class_name}) => {
     return (
         <header className="header-area">
             <div className="header-top bg-img" style={{backgroundImage: header_img}}>
@@ -48,6 +48,7 @@ const Header = () => {
                                     <nav>
                                         <NavMenu
                                             paths={paths}
+                                            className={"menu-overflow"}
                                         />
                                     </nav>
                                 </div>
@@ -59,7 +60,7 @@ const Header = () => {
                             <nav id="mobile-menu-active">
                                 <NavMenu 
                                     paths={paths}
-                                    className={"menu-overflow"}
+                                    
                                 />
                             </nav>
                         </div>

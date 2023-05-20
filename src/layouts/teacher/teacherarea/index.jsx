@@ -1,10 +1,9 @@
 import React from 'react';
-import {caption, cards} from '../../../config/teacher';
 
 // components
 import Card from '../../../components/teacher/card';
 
-const TeacherArea = () => {
+const TeacherArea = ({caption, cards}) => {
     return (
         <div className="teacher-area pt-130 pb-100">
             <div className="container">

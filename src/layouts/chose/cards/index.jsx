@@ -1,10 +1,9 @@
 import {React, Fragment} from 'react';
-import {cards} from '../../../config/chose';
 
 // components
 import Card from '../../../components/card/home';
 
-const ChoseUs = () => {
+const ChoseUs = ({cards}) => {
     return (
         <Fragment>
             <div className="choose-us section-padding-1">

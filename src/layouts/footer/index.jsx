@@ -1,15 +1,12 @@
 import {React, Fragment} from 'react';
 import { Link } from 'react-router-dom';
 
-// settings
-import {company} from '../../config/footer';
-
 // layouts
 import SocialNetwork from '../socialnetwork';
 import NewsLatter from '../../components/forms/newslatter';
 import AboutUsFooter from '../about/aboutusfooter';
 
-const Footer = () => {
+const Footer = ({company, social}) => {
     const date = new Date();
     return (
         <Fragment>
@@ -84,7 +81,7 @@ const Footer = () => {
                                     </p>
                                 </div>
                             </div>
-                            <SocialNetwork />
+                            <SocialNetwork social={social} />
                         </div>
                     </div>
                 </div>

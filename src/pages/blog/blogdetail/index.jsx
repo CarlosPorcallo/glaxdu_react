@@ -1,7 +1,7 @@
 import {React, Fragment} from 'react';
 
 // middleware
-import {getDetailPost} from '../../../middleware/blog';
+import {getDetailPost} from '../../../middleware/getters/blog';
 
 // layouts
 import Header from '../../../layouts/header';

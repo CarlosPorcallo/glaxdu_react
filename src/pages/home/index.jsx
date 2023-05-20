@@ -1,9 +1,15 @@
 import {React, Fragment} from 'react';
 
 // middleware
-import {getSlides} from '../../middleware/home';
-import {getCaptionCourses, getImgBackground, getCourses} from '../../middleware/courses';
-import {getCaptionBlog, getPosts} from '../../middleware/blog';
+import {getSlides} from '../../middleware/getters/home';
+import {getAbout, getWidthVideo, getHeightVideo, getVideoSrc, getCompany} from '../../middleware/getters/about';
+import {getEmailContact, getPhone, getPathsNavbar, getHeaderImg} from '../../middleware/getters/header';
+import {getCardsChose} from '../../middleware/getters/chose';
+import {getCaptionCourses, getImgBackground, getCourses} from '../../middleware/getters/courses';
+import {getCaptionTeacher, getCardsTeacher} from '../../middleware/getters/teacher';
+import {getCaptionEvents, getSlidesEvents} from '../../middleware/getters/events';
+import {getCaptionBlog, getPosts} from '../../middleware/getters/blog';
+import {getSocialNetworks} from '../../middleware/getters/social';
 
 // layouts
 import Header from '../../layouts/header';
@@ -18,34 +24,74 @@ import BlogArea from '../../layouts/blog/blogarea';
 import Footer from '../../layouts/footer';
 
 const Home = () => {
+    // header
+    const email_contact = getEmailContact();
+    const phone = getPhone();
+    const paths = getPathsNavbar();
+    const header_img = getHeaderImg();
     // slider principal
     const slides = getSlides();
+    // about us
+    const about = getAbout();
+    const width = getWidthVideo();
+    const height = getHeightVideo();
+    const video_src = getVideoSrc();
+    // chose us (elígenos)
+    const cards_chose = getCardsChose();
     // cursos
-    const captionCourses = getCaptionCourses();
+    const caption_courses = getCaptionCourses();
     const img_background = getImgBackground();
     const courses = getCourses();
+    // maestros
+    const caption_teacher = getCaptionTeacher();
+    const cards_teacher = getCardsTeacher();
+    // eventos
+    const caption_event = getCaptionEvents();
+    const slides_events = getSlidesEvents();
     // blog
     const captionBlog = getCaptionBlog();
     const posts = getPosts();
+    // footer
+    const company = getCompany();
+    const social_networks = getSocialNetworks(); 
     return (
         <Fragment>
-            <Header />
+            <Header 
+                email_contact={email_contact}
+                phone={phone}
+                paths={paths}
+                header_img={header_img}
+            />
             <Slider slides={slides} />
-            <ChoseUs />
-            <AboutUs />
+            <ChoseUs cards={cards_chose} />
+            <AboutUs 
+                about={about}
+                width={width}
+                height={height}
+                video_src={video_src}
+            />
             <CourseArea
-                caption={captionCourses}
+                caption={caption_courses}
                 courses={courses}
                 img_background={img_background}
             />
-            <TeacherArea />
-            <EventArea />
+            <TeacherArea 
+                caption={caption_teacher}
+                cards={cards_teacher}
+            />
+            <EventArea 
+                caption={caption_event}
+                slides={slides_events}
+            />
             <BlogArea 
                 title={true}
                 caption={captionBlog}
                 posts={posts}
             />
-            <Footer />
+            <Footer 
+                company={company}
+                social={social_networks}
+            />
         </Fragment>
     );
 }

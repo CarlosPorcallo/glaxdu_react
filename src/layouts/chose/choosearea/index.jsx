@@ -1,12 +1,11 @@
 import React from 'react';
-import {about_cards, about_banner2, about_banner3} from '../../../config/about';
 
 // components
 import About from '../../../components/card/about';
 
-const ChooseArea = () => {
-    const img_banner = require('../../../assets/img/banner/'+about_banner2);
-    const background_image = require('../../../assets/img/bg/'+about_banner3);
+const ChooseArea = ({about_cards, about_banner, bg_img}) => {
+    const img_banner = require('../../../assets/img/banner/'+about_banner);
+    const background_image = require('../../../assets/img/bg/'+bg_img);
     return (
         <div className="choose-area bg-img pt-90" style={{backgroundImage: background_image}}>
             <div className="container">

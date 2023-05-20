@@ -4,6 +4,9 @@ export const about = [
     "Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven  iam, quis nostrud exer citation ullamco laboris nisi ut perspiciatis unde omnis iste natus error sit voluptate." 
 ];
 
+// constantes
+export const company = "UIC";
+
 // banners
 export const about_banner = "banner-4.jpg";
 export const about_banner2 = "about.png";

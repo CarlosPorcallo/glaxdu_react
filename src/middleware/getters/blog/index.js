@@ -1,4 +1,5 @@
-import {detail_post, caption, posts} from '../../config/blog';
+// trayendo la mock data
+import {detail_post, caption, posts} from '../../../config/blog';
 
 // sección home
 export const getCaptionBlog = () => {
