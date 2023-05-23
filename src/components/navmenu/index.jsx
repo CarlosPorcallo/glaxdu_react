@@ -18,7 +18,7 @@ const NavMenu = ({className, paths}) => {
                             </ul>
                         </li>
                         :
-                        <li><Link to={path.href}> {path.name} </Link></li>
+                        <li key={Math.random()}><Link to={path.href}> {path.name} </Link></li>
                     )
                 ))
             }

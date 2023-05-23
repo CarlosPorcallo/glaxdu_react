@@ -1,13 +1,19 @@
 import {React, Fragment} from 'react';
 import { Link } from 'react-router-dom';
 
+// middleware
+import {getSocialNetworks} from '../../middleware/getters/social';
+import {getCompany} from '../../middleware/getters/about';
+
 // layouts
 import SocialNetwork from '../socialnetwork';
 import NewsLatter from '../../components/forms/newslatter';
 import AboutUsFooter from '../about/aboutusfooter';
 
-const Footer = ({company, social}) => {
+const Footer = () => {
     const date = new Date();
+    const company = getCompany();
+    const social = getSocialNetworks(); 
     return (
         <Fragment>
             <footer className="footer-area">

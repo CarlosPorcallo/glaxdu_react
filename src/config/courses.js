@@ -43,8 +43,11 @@ export const courses = [
     {
         "id": 1,
         "heading": "Apparel Manufacturing",
+        "summary": [
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ],
         "paragraphs": [
-            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid."
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
         ],
         "tag": "Addmission Going On",
         "credits": "125",
@@ -54,6 +57,10 @@ export const courses = [
             "src": "course-1.jpg", 
             "alt": ""
         },
+        "img_banner": {
+            "src": "course-details-1.jpg", 
+            "alt": ""
+        },
         "img_background": {
             "src": "course-details.jpg", 
             "alt": ""
@@ -62,13 +69,57 @@ export const courses = [
             "className": "default-btn",
             "href": "#",
             "name": "APPLY NOW"
-        }        
+        },
+        "course_list_content": [
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+        ],
+        "total_students": 50,
+        "course_duration": "4yrs",
+        "course_credits": 125,
+        "total_semester": 12,
+        "paragraph_related_courses": [
+            "Hempor incididunt ut labore et dolore mm, itation ullamco laboris",
+            "nisi ut aliquip."
+        ],
+        "reviews": [
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-1.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review",
+                "child": false
+            },
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-2.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review child-review",
+                "child": true
+            }
+        ]
     },
     {
         "id": 2,
         "heading": "Graphic Design & Multimedia",
+        "summary": [
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ],
         "paragraphs": [
-            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid."
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
         ],
         "credits": "125",
         "duration": "4yrs",
@@ -77,6 +128,10 @@ export const courses = [
             "src": "course-2.jpg", 
             "alt": ""
         },
+        "img_banner": {
+            "src": "course-details-1.jpg", 
+            "alt": ""
+        },
         "img_background": {
             "src": "course-details.jpg", 
             "alt": ""
@@ -85,13 +140,57 @@ export const courses = [
             "className": "default-btn",
             "href": "#",
             "name": "APPLY NOW"
-        }      
+        },
+        "course_list_content": [
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+        ],
+        "total_students": 50,
+        "course_duration": "4yrs",
+        "course_credits": 125,
+        "total_semester": 12,
+        "paragraph_related_courses": [
+            "Hempor incididunt ut labore et dolore mm, itation ullamco laboris",
+            "nisi ut aliquip."
+        ],
+        "reviews": [
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-1.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review",
+                "child": false
+            },
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-2.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review child-review",
+                "child": true
+            }
+        ] 
     },
     {
         "id": 3,
         "heading": "Computer Engineering",
+        "summary": [
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ],
         "paragraphs": [
-            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid."
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
         ],
         "credits": "125",
         "duration": "4yrs",
@@ -100,6 +199,10 @@ export const courses = [
             "src": "course-3.jpg", 
             "alt": ""
         },
+        "img_banner": {
+            "src": "course-details-1.jpg", 
+            "alt": ""
+        },
         "img_background": {
             "src": "course-details.jpg", 
             "alt": ""
@@ -108,22 +211,71 @@ export const courses = [
             "className": "default-btn",
             "href": "#",
             "name": "APPLY NOW"
-        }   
+        },
+        "course_list_content": [
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+        ],
+        "total_students": 50,
+        "course_duration": "4yrs",
+        "course_credits": 125,
+        "total_semester": 12,
+        "paragraph_related_courses": [
+            "Hempor incididunt ut labore et dolore mm, itation ullamco laboris",
+            "nisi ut aliquip."
+        ],
+        "reviews": [
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-1.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review",
+                "child": false
+            },
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-2.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review child-review",
+                "child": true
+            }
+        ] 
     },
     {
         "id": 4,
         "heading": "Fashion & Technology",
+        "summary": [
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ],
         "paragraphs": [
-            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid."
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
         ],
         "tag": "Post Graduation Course",
         "credits": "125",
         "duration": "4yrs",
         "href": "/course/detail/4",
+        "instructor": "Ara’af Imtiaz",
         "img": {
             "src": "course-3.jpg",
             "alt": ""
         },
+        "img_banner": {
+            "src": "course-details-1.jpg", 
+            "alt": ""
+        },
         "img_background": {
             "src": "course-details.jpg",
             "alt": ""
@@ -132,19 +284,68 @@ export const courses = [
             "className": "default-btn",
             "href": "#",
             "name": "APPLY NOW"
-        }   
+        },
+        "course_list_content": [
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+        ],
+        "total_students": 50,
+        "course_duration": "4yrs",
+        "course_credits": 125,
+        "total_semester": 12,
+        "paragraph_related_courses": [
+            "Hempor incididunt ut labore et dolore mm, itation ullamco laboris",
+            "nisi ut aliquip."
+        ],
+        "reviews": [
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-1.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review",
+                "child": false
+            },
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-2.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review child-review",
+                "child": true
+            }
+        ]  
     },
     {
         "id": 5,
         "heading": "Apparel Manufacturing",
+        "summary": [
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ],
         "paragraphs": [
-            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid."
+            "Magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi m aperiam, eaque ipsa quae abaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
         ],
         "credits": "125",
         "duration": "4yrs",
         "href": "/course/detail/5",
+        "instructor": "Ara’af Imtiaz",
         "img": {
             "src": "course-2.jpg",
+            "alt": ""
+        },
+        "img_banner": {
+            "src": "course-details-1.jpg", 
             "alt": ""
         },
         "img_background": {
@@ -155,6 +356,47 @@ export const courses = [
             "className": "default-btn",
             "href": "#",
             "name": "APPLY NOW"
-        }
+        },
+        "course_list_content": [
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+            "Es eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est"
+        ],
+        "total_students": 50,
+        "course_duration": "4yrs",
+        "course_credits": 125,
+        "total_semester": 12,
+        "paragraph_related_courses": [
+            "Hempor incididunt ut labore et dolore mm, itation ullamco laboris",
+            "nisi ut aliquip."
+        ],
+        "reviews": [
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-1.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review",
+                "child": false
+            },
+            {
+                "author": "White Lewis",
+                "rating": 5,
+                "paragraphs": [
+                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                ],
+                "img": {
+                    "src": "recent-post-2.jpg",
+                    "alt": "" 
+                },
+                "className": "single-review child-review",
+                "child": true
+            }
+        ]
     }
 ];

@@ -2,14 +2,12 @@ import {React, Fragment} from 'react';
 
 // middleware
 import {getSlides} from '../../middleware/getters/home';
-import {getAbout, getWidthVideo, getHeightVideo, getVideoSrc, getCompany} from '../../middleware/getters/about';
-import {getEmailContact, getPhone, getPathsNavbar, getHeaderImg} from '../../middleware/getters/header';
+import {getAbout, getWidthVideo, getHeightVideo, getVideoSrc} from '../../middleware/getters/about';
 import {getCardsChose} from '../../middleware/getters/chose';
 import {getCaptionCourses, getImgBackground, getCourses} from '../../middleware/getters/courses';
 import {getCaptionTeacher, getCardsTeacher} from '../../middleware/getters/teacher';
 import {getCaptionEvents, getSlidesEvents} from '../../middleware/getters/events';
 import {getCaptionBlog, getPosts} from '../../middleware/getters/blog';
-import {getSocialNetworks} from '../../middleware/getters/social';
 
 // layouts
 import Header from '../../layouts/header';
@@ -24,11 +22,6 @@ import BlogArea from '../../layouts/blog/blogarea';
 import Footer from '../../layouts/footer';
 
 const Home = () => {
-    // header
-    const email_contact = getEmailContact();
-    const phone = getPhone();
-    const paths = getPathsNavbar();
-    const header_img = getHeaderImg();
     // slider principal
     const slides = getSlides();
     // about us
@@ -50,18 +43,10 @@ const Home = () => {
     const slides_events = getSlidesEvents();
     // blog
     const captionBlog = getCaptionBlog();
-    const posts = getPosts();
-    // footer
-    const company = getCompany();
-    const social_networks = getSocialNetworks(); 
+    const posts = getPosts(); 
     return (
         <Fragment>
-            <Header 
-                email_contact={email_contact}
-                phone={phone}
-                paths={paths}
-                header_img={header_img}
-            />
+            <Header />
             <Slider slides={slides} />
             <ChoseUs cards={cards_chose} />
             <AboutUs 
@@ -88,10 +73,7 @@ const Home = () => {
                 caption={captionBlog}
                 posts={posts}
             />
-            <Footer 
-                company={company}
-                social={social_networks}
-            />
+            <Footer />
         </Fragment>
     );
 }

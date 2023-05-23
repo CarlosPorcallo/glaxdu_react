@@ -2,12 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import './index.css';
-//import { email_contact, phone, paths, header_img } from '../../config/header.js';
+
+// middleware
+import {getEmailContact, getPhone, getPathsNavbar, getHeaderImg} from '../../middleware/getters/header';
 
 // components
 import NavMenu from '../../components/navmenu';
 
-const Header = ({email_contact, phone, paths, header_img, class_name}) => {
+const Header = () => {
+    const email_contact = getEmailContact();
+    const phone = getPhone();
+    const paths = getPathsNavbar();
+    const header_img = getHeaderImg();
     return (
         <header className="header-area">
             <div className="header-top bg-img" style={{backgroundImage: header_img}}>

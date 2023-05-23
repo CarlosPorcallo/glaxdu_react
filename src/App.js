@@ -7,8 +7,8 @@ import Rout3r from './routes';
 
 function App() {
   return (
-    <Fragment>  
-      <Rout3r />
+    <Fragment>
+        <Rout3r /> 
       <Helmet>
         <script src="assets/js/popper.min.js" type="text/javascript" />
         <script src="assets/js/bootstrap.min.js" type="text/javascript" />
