@@ -21,8 +21,8 @@ const BlogDetails = ({share, detail_post}) => {
                     </div>
                     <span>{detail_post.category}</span>
                 </div>
-                <h3>{detail_post.title}</h3>
-                {detail_post.paragraphs.map((p) => (
+                <h3>{detail_post.heading}</h3>
+                {detail_post.paragraphs_full_article.map((p) => (
                     <Paragraph
                         key={Math.random()} 
                         p={p} 

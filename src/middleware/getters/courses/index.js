@@ -16,12 +16,13 @@ export const getCourses = () => {
 };
 
 // sección detalle de curso
-export const getDetail = () => {
-    // de manera provisional se retorna un elemento al azar, posteriormente se consumirá esta info desde el backend
-
-    // se obtiene un index aleatorio
-    const index = Math.floor(Math.random() * courses.length);
-    return courses[index];
+export const getDetail = (id) => {
+    // de manera provisional se retorna un elemento desde la mock data, posteriormente se consumirá esta info desde el backend
+    for (let i = 0; i < courses.length; i++) {
+        if (parseInt(courses[i].id) == parseInt(id)) {
+            return courses[i];
+        }
+    }
 };
 
 export const getRelatedCourses = () => {

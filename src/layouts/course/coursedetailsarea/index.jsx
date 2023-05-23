@@ -11,6 +11,7 @@ import RattingFormWrapper from '../../../components/forms/rattingformwrapper';
 import Sidebar from '../../sidebar';
 
 const CourseDetailsArea = ({course, courses}) => {
+    console.log(course);
     const img_banner = require('../../../assets/img/banner/'+course.img_background.src);
     const [tab, setTab] = useState(1);
     return (

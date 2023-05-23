@@ -35,3 +35,12 @@ export const settings_brands = {
     autoplay: true,
     loop: true
 };
+export const settings_gallery = {
+    slides: 1,
+    theme: "",
+    nav: false,
+    dots: false,
+    margin: 8,
+    autoplay: true,
+    loop: true
+};

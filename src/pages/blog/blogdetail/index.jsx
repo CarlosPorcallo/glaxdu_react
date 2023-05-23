@@ -1,4 +1,5 @@
 import {React, Fragment} from 'react';
+import {useParams} from 'react-router';
 
 // middleware
 import {getDetailPost} from '../../../middleware/getters/blog';
@@ -10,7 +11,8 @@ import Detail from '../../../layouts/blog/blogdetail';
 import BlogDetailGrid from '../../../layouts/blog/blogdetailgrid';
 
 const BlogDetail = () => {
-    const detail_post = getDetailPost();
+    const {id} = useParams();
+    const detail_post = getDetailPost(id);
     return (
         <Fragment>
             <Header />

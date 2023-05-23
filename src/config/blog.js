@@ -41,9 +41,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
         "user": "Adrin Azra",
-        "qty_comments": "15",
-        "date": "Jun, 24th 2018"
+        "qty_comments": "10",
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 2,
@@ -57,9 +151,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
-        "user": "Tayeb Jon",
-        "qty_comments": "12",
-        "date": "Feb, 18th 2017"
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
+        "user": "Adrin Azra",
+        "qty_comments": "10",
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 3,
@@ -73,9 +261,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
-        "user": "Rifat Al",
-        "qty_comments": "20",
-        "date": "Oct, 14th 2018"
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
+        "user": "Adrin Azra",
+        "qty_comments": "10",
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 4,
@@ -89,9 +371,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
-        "user": "Md Tamim",
-        "qty_comments": "08",
-        "date": "Jun, 21th 2017"
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
+        "user": "Adrin Azra",
+        "qty_comments": "10",
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 5,
@@ -105,9 +481,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
         "user": "Adrin Azra",
         "qty_comments": "10",
-        "date": "Jun, 24th 2017"
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 6,
@@ -121,9 +591,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
         "user": "Adrin Azra",
         "qty_comments": "10",
-        "date": "Jun, 24th 2017"
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 7,
@@ -137,9 +701,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
         "user": "Adrin Azra",
         "qty_comments": "10",
-        "date": "Jun, 24th 2017"
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     },
     {
         "id": 8,
@@ -153,9 +811,103 @@ export const posts = [
         "paragraphs": [
             "Doloremque laudan tium, totam ersps uns iste natus."
         ],
+        "paragraphs_full_article": [
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            },
+            {
+                "kind": "blockquote",
+                "text": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit."
+            },
+            {
+                "kind": "p",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            }
+        ],
         "user": "Adrin Azra",
         "qty_comments": "10",
-        "date": "Jun, 24th 2017"
+        "date": "June, 24th 2016",
+        "author": {
+            "name": "Adrin Azra",
+            "profile_pic": {
+                "src": "author.jpg",
+                "alt": ""
+            },
+            "summary": "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et dolore magna aliqua. Ut enim  fugiat nulla pariaatat non proident, sunt in culpa qui officia deserunt m ut perspiciatis und.", 
+            "networks": [
+                {
+                    "class": "facebook",
+                    "href": "#",
+                    "icon": "fa fa-facebook"
+                },
+                {
+                    "class": "instagram",
+                    "href": "#",
+                    "icon": "fa fa-instagram"
+                },
+                {
+                    "class": "twitter",
+                    "href": "#",
+                    "icon": "fa fa-twitter"
+                },
+                {
+                    "class": "google",
+                    "href": "#",
+                    "icon": "fa fa-google"
+                }
+            ]
+        },
+        "category": "Education",
+        "tags": [
+            {
+                "href": "#",
+                "name": "Loremsite"
+            },
+            {
+                "href": "#",
+                "name": "Loremipsum"
+            },
+            {
+                "href": "#",
+                "name": "Dolar"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "img": {
+                    "src": "blog-comment.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 2,
+                "img": {
+                    "src": "blog-comment-2.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            },
+            {
+                "id": 3,
+                "img": {
+                    "src": "blog-comment-3.jpg",
+                    "alt": ""
+                },
+                "title": "AYESHA HOQUE",
+                "paragraphs": [
+                    "Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusm od tempor incidi dunt ut laboperspiciatis und."
+                ]
+            }
+        ]
     }
 ];
 
@@ -176,9 +928,9 @@ export const detail_post = {
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
         }
     ],
-    "img": {
+    "img_detail": {
         "src": "blog-details.jpg",
-        "alt": "Adrin Azra",
+        "alt": "",
         "comments": "10"
     },
     "date": "June, 24th 2016",

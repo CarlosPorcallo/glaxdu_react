@@ -6,10 +6,10 @@ const RecentCourse = ({course}) => {
     return (
         <div className="sin-sidebar-recent-course">
             <div className="sidebar-recent-course-img">
-                <Link to="#"><img src={img} alt={course.img.alt} /></Link>
+                <Link to={course.href}><img src={img} alt={course.img.alt} /></Link>
             </div>
             <div className="sidebar-recent-course-content">
-                <h4><Link to="#">{course.heading}</Link></h4>
+                <h4><Link to={course.href}>{course.heading}</Link></h4>
                 <ul>
                     <li>Credits : {course.credits}</li>
                     <li className="duration-color">Duration : {course.duration}</li>

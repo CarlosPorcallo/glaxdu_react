@@ -1,4 +1,5 @@
 import {React, Fragment} from 'react';
+import {useParams} from 'react-router';
 
 // middleware
 import {getDetail, getRelatedCourses} from '../../../middleware/getters/courses';
@@ -11,8 +12,8 @@ import BrandLogoArea from '../../../layouts/branding/brandlogoarea';
 import Footer from '../../../layouts/footer';
 
 const CourseDetails = () => {
-    // obteniendo detalle del curso (provisional)
-    const course = getDetail();
+    const {id} = useParams();
+    const course = getDetail(id);
 
     // obteniendo los cursos relacionados
     const related_courses = getRelatedCourses();
