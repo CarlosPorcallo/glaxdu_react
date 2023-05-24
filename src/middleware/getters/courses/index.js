@@ -19,7 +19,7 @@ export const getCourses = () => {
 export const getDetail = (id) => {
     // de manera provisional se retorna un elemento desde la mock data, posteriormente se consumirá esta info desde el backend
     for (let i = 0; i < courses.length; i++) {
-        if (parseInt(courses[i].id) == parseInt(id)) {
+        if (parseInt(courses[i].id) === parseInt(id)) {
             return courses[i];
         }
     }

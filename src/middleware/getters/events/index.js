@@ -13,7 +13,7 @@ export const getSlidesEvents = () => {
 export const getEvent = (id) => {
     // de manera provisional se retorna un elemento desde la mock data, posteriormente se consumirá esta info desde el backend
     for (let i = 0; i < slides.length; i++) {
-        if (parseInt(slides[i].id) == parseInt(id)) {
+        if (parseInt(slides[i].id) === parseInt(id)) {
             return slides[i];
         }
     }

@@ -1,19 +1,21 @@
-import {React, Fragment} from 'react';
+import {React, Fragment, useContext} from 'react';
 import { Link } from 'react-router-dom';
 
-// middleware
-import {getSocialNetworks} from '../../middleware/getters/social';
-import {getCompany} from '../../middleware/getters/about';
+// context
+import {HeaderFooterContext} from '../../middleware/context/headerfooter';
 
 // layouts
 import SocialNetwork from '../socialnetwork';
 import NewsLatter from '../../components/forms/newslatter';
 import AboutUsFooter from '../about/aboutusfooter';
 
+// components
+import Gallery from '../../components/footer/gallery';
+
 const Footer = () => {
-    const date = new Date();
-    const company = getCompany();
-    const social = getSocialNetworks(); 
+    const {date, company, social, gallery} = useContext(HeaderFooterContext);
+    console.log("gallery footer");
+    console.log(gallery);
     return (
         <Fragment>
             <footer className="footer-area">
@@ -59,14 +61,7 @@ const Footer = () => {
                                     <div className="footer-title">
                                         <h4>GALLERY</h4>
                                     </div>
-                                    <div className="footer-gallery">
-                                        <ul>
-                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-1.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-2.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-3.png" alt="" /></a></li>
-                                            <li><a href="#"><img src="../../assets/img/gallery/gallery-4.png" alt="" /></a></li>
-                                        </ul>
-                                    </div>
+                                    <Gallery pictures={gallery} />
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-12">

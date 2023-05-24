@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const SideCard = ({post}) => {
     const img = require('../../../assets/img/blog/'+post.img.src);
     return (
-        <div class="single-recent-post">
-            <div class="recent-post-img">
+        <div className="single-recent-post">
+            <div className="recent-post-img">
                 <Link to={post.href}><img src={img} alt={post.img.alt} /></Link>
             </div>
-            <div class="recent-post-content">
+            <div className="recent-post-content">
                 <h5>
                     <Link to={post.href}>{post.heading}</Link>
                 </h5>

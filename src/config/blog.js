@@ -1,6 +1,5 @@
 // constantes
 export const caption = "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."; 
-
 export const share = [
     {
         "class": "facebook",
@@ -26,6 +25,8 @@ export const share = [
 
 // settings
 export const recents_limit = 2;
+export const page_size_home = 4;
+export const page_size = 6;
 
 // mock data
 export const posts = [

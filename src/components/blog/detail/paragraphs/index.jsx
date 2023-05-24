@@ -4,7 +4,7 @@ const Paragraph = ({p}) => {
     if (p.kind === "p") {
         return <p>{p.text}</p>
     } else {
-        return <blockquote><i class="quote-top fa fa-quote-left"></i>{p.text}<i class="quote-bottom fa fa-quote-right"></i></blockquote>
+        return <blockquote><i className="quote-top fa fa-quote-left"></i>{p.text}<i className="quote-bottom fa fa-quote-right"></i></blockquote>
     }
 }
  

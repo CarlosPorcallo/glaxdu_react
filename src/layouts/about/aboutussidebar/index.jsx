@@ -8,8 +8,8 @@ import SocialNetwork from '../../../components/socialnetwork';
 const AboutUsSidebar = () => {
     const img = require("../../../assets/img/banner/"+about_banner);
     return (
-        <div class="sidebar-about mb-40">
-            <div class="sidebar-title mb-15">
+        <div className="sidebar-about mb-40">
+            <div className="sidebar-title mb-15">
                 <h4>About Us</h4>
             </div>
 
@@ -17,7 +17,7 @@ const AboutUsSidebar = () => {
                 <p key={Math.random()}>{p}<br /><br /></p>
             ))}
             <a href={about_banner.href}><img src={img} alt={about_banner.alt} /></a>
-            <div class="sidebar-social">
+            <div className="sidebar-social">
                 <SocialNetwork 
                     social={social}
                 />

@@ -6,14 +6,17 @@ import Tag from '../../../components/tag';
 
 const Tags = () => {
     return (
-        <div class="sidebar-tag-wrap">
-            <div class="sidebar-title mb-40">
+        <div className="sidebar-tag-wrap">
+            <div className="sidebar-title mb-40">
                 <h4>Tag</h4>
             </div>
-            <div class="sidebar-tag">
+            <div className="sidebar-tag">
                 <ul>
                     {tags.map((tag) => (
-                        <Tag tag={tag}/>
+                        <Tag 
+                            key={Math.random()}
+                            tag={tag}
+                        />
                     ))}
                 </ul>
             </div>

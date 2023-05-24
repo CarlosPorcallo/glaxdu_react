@@ -13,11 +13,11 @@ import BlogComment from '../../../components/blog/detail/blogcomment';
 
 const Detail = ({detail_post}) => {
     return (
-        <div class="event-area pt-130 pb-130">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 col-lg-8">
-                        <div class="blog-details-wrap mr-40">
+        <div className="event-area pt-130 pb-130">
+            <div className="container">
+                <div className="row">
+                    <div className="col-xl-9 col-lg-8">
+                        <div className="blog-details-wrap mr-40">
                             <BlogDetails 
                                 share={share}
                                 detail_post={detail_post} 
@@ -27,7 +27,7 @@ const Detail = ({detail_post}) => {
                             <BlogComment comments={detail_post.comments} />
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4">
+                    <div className="col-xl-3 col-lg-4">
                         <Sidebar />
                     </div>
                 </div>

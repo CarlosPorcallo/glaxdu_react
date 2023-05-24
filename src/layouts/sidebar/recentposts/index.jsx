@@ -6,11 +6,11 @@ import SideCard from '../../../components/blog/sidecard';
 
 const RecentPostSidebar = () => {
     return (
-        <div class="sidebar-recent-post mb-35">
-            <div class="sidebar-title mb-40">
+        <div className="sidebar-recent-post mb-35">
+            <div className="sidebar-title mb-40">
                 <h4>Recent Post</h4>
             </div>
-            <div class="recent-post-wrap">
+            <div className="recent-post-wrap">
                 {posts.slice(0, recents_limit).map((post) => (
                     <SideCard 
                         key={Math.random()}

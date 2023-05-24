@@ -6,11 +6,11 @@ import RecentCourse from '../../../components/card/recentcourse';
 
 const RecentCoursesSidebar = () => {
     return (
-        <div class="sidebar-recent-course-wrap mb-40">
-            <div class="sidebar-title mb-40">
+        <div className="sidebar-recent-course-wrap mb-40">
+            <div className="sidebar-title mb-40">
                 <h4>Recent Courses</h4>
             </div>
-            <div class="sidebar-recent-course">
+            <div className="sidebar-recent-course">
                 {courses.slice(0, recents_limit).map((course) => (
                     <RecentCourse 
                         key={Math.random()}

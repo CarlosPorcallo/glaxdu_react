@@ -10,7 +10,7 @@ import Tags from './tags';
 
 const Sidebar = () => {
     return (
-        <div class="sidebar-style">
+        <div className="sidebar-style">
             <Search />
             <AboutUsSidebar />
             <RecentPostSidebar />

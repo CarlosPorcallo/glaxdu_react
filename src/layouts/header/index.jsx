@@ -1,19 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import './index.css';
 
-// middleware
-import {getEmailContact, getPhone, getPathsNavbar, getHeaderImg} from '../../middleware/getters/header';
+// context
+import {HeaderFooterContext} from '../../middleware/context/headerfooter';
 
 // components
 import NavMenu from '../../components/navmenu';
 
 const Header = () => {
-    const email_contact = getEmailContact();
-    const phone = getPhone();
-    const paths = getPathsNavbar();
-    const header_img = getHeaderImg();
+    const {email_contact, phone, paths, header_img} = useContext(HeaderFooterContext);
     return (
         <header className="header-area">
             <div className="header-top bg-img" style={{backgroundImage: header_img}}>

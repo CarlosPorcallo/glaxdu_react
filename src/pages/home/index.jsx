@@ -9,6 +9,9 @@ import {getCaptionTeacher, getCardsTeacher} from '../../middleware/getters/teach
 import {getCaptionEvents, getSlidesEvents} from '../../middleware/getters/events';
 import {getCaptionBlog, getPosts} from '../../middleware/getters/blog';
 
+// context
+import {PaginatorProvider} from '../../middleware/context/paginator';
+
 // layouts
 import Header from '../../layouts/header';
 import Slider from '../../components/slider/home';
@@ -68,11 +71,13 @@ const Home = () => {
                 caption={caption_event}
                 slides={slides_events}
             />
-            <BlogArea 
-                title={true}
-                caption={captionBlog}
-                posts={posts}
-            />
+            <PaginatorProvider>
+                <BlogArea 
+                    title={true}
+                    caption={captionBlog}
+                    posts={posts}
+                />
+            </PaginatorProvider>
             <Footer />
         </Fragment>
     );

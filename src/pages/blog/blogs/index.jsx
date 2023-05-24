@@ -3,6 +3,9 @@ import {React, Fragment} from 'react';
 // middleware
 import {getPosts} from '../../../middleware/getters/blog';
 
+// context
+import {PaginatorProvider} from '../../../middleware/context/paginator';
+
 // components
 import Header from '../../../layouts/header';
 import BlogGrid from '../../../layouts/blog/bloggrid';
@@ -15,7 +18,9 @@ const Blog = () => {
         <Fragment>
             <Header />
             <BlogGrid />
-            <BlogArea posts={posts} />
+            <PaginatorProvider>
+                <BlogArea posts={posts} />
+            </PaginatorProvider>
             <Footer />
         </Fragment>
     );

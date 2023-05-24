@@ -15,7 +15,7 @@ const AboutUsFooter = () => {
             </div>
             <div className="footer-about">
                 {about_caption.map((p) => (
-                    <p>{p}</p>
+                    <p key={Math.random()}>{p}</p>
                 ))}
                 <div className="f-contact-info">
                     <div className="single-f-contact-info">

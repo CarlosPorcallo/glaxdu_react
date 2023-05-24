@@ -8,12 +8,12 @@ const BlogComment = ({comments}) => {
     const [showComments, setShowComments] = useState(false);
     return (
         <Fragment>
-            <div class="blog-comment">
-                <div class="blog-comment-btn mb-80 commrnt-toggle">
+            <div className="blog-comment">
+                <div className="blog-comment-btn mb-80 commrnt-toggle">
                     <a onClick={() => setShowComments(!showComments)}>VIEW COMMENT</a>
                 </div>
                 {showComments ?  
-                    <div class="blog-comment-content-wrap">
+                    <div className="blog-comment-content-wrap">
                         <h4>COMMENT</h4>
                         {comments.map((comment) => (
                             <Comment comment={comment} />
@@ -21,7 +21,7 @@ const BlogComment = ({comments}) => {
                     </div>
                 : null}
             </div>
-            <div class="leave-comment-area">
+            <div className="leave-comment-area">
                 <h3>Leave A Comment</h3>
                 <FormComment />
             </div>

@@ -15,7 +15,7 @@ const TeacherArea = ({caption, cards}) => {
                     {cards.map((slide) => (
                         <div
                             key={Math.random()}
-                            class="custom-col-5"
+                            className="custom-col-5"
                         >
                             <Card slide={slide} />
                         </div>
