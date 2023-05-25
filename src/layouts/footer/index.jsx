@@ -14,8 +14,6 @@ import Gallery from '../../components/footer/gallery';
 
 const Footer = () => {
     const {date, company, social, gallery} = useContext(HeaderFooterContext);
-    console.log("gallery footer");
-    console.log(gallery);
     return (
         <Fragment>
             <footer className="footer-area">

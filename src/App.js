@@ -6,12 +6,15 @@ import Rout3r from './routes';
 
 // context
 import {HeaderFooterProvider} from './middleware/context/headerfooter';
+import {CourseProvider} from './middleware/context/course';
 
 function App() {
   return (
     <Fragment>
       <HeaderFooterProvider>
-        <Rout3r /> 
+        <CourseProvider>
+          <Rout3r /> 
+        </CourseProvider>
       </HeaderFooterProvider>
     </Fragment>
   );

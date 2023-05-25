@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React, useState, useContext} from 'react';
 
 // components
 import SliderCourses from '../../../components/slider/courses';
@@ -10,8 +10,12 @@ import RattingFormWrapper from '../../../components/forms/rattingformwrapper';
 // layouts
 import Sidebar from '../../sidebar';
 
-const CourseDetailsArea = ({course, courses}) => {
-    const img_banner = require('../../../assets/img/banner/'+course.img_background.src);
+// context
+import {CourseContext} from '../../../middleware/context/course';
+
+const CourseDetailsArea = () => {
+    const {course, relatedCourses} = useContext(CourseContext);
+    const img_banner = require('../../../assets/img/banner/'+course.current.img_background.src);
     const [tab, setTab] = useState(1);
     return (
         <div className="course-details-area pt-130">
@@ -20,7 +24,7 @@ const CourseDetailsArea = ({course, courses}) => {
                     <div className="col-xl-9 col-lg-8">
                         <div className="course-left-wrap mr-40">
                             <div className="apply-area">
-                                <img src={img_banner} alt={course.img_background.alt} />
+                                <img src={img_banner} alt={course.current.img_background.alt} />
                                 <div className="course-apply-btn">
                                     <a href="#" className="default-btn">APPLY NOW</a>
                                 </div>
@@ -47,25 +51,25 @@ const CourseDetailsArea = ({course, courses}) => {
                             </div>
                             <div className="tab-content jump">
                                 <div className={tab === 1 ? "tab-pane active" : "tab-pane"}>
-                                    <Details details={course} />
+                                    <Details details={course.current} />
                                 </div>
                                 <div className={tab === 2 ? "tab-pane active" : "tab-pane"}>
                                     <Instructor
-                                        details={course}
+                                        details={course.current}
                                     />
                                 </div>
                                 <div className={tab === 3 ? "tab-pane active" : "tab-pane"}>
-                                    <ReviewWrapper reviews={course.reviews} />
+                                    <ReviewWrapper reviews={course.current.reviews} />
                                     <RattingFormWrapper />
                                 </div>
                             </div>
                             <div className="related-course pt-70">
                                 <div className="related-title mb-45 mrg-bottom-small">
                                     <h3>Related Course</h3>
-                                    {course.course_list_content.map((p) => ( <p key={Math.random()}>{p}</p> ))}
+                                    {course.current.course_list_content.map((p) => ( <p key={Math.random()}>{p}</p> ))}
                                 </div>
 
-                                <SliderCourses slides={courses} />
+                                <SliderCourses slides={relatedCourses.current} />
                                 
                             </div>
                         </div>
