@@ -19,7 +19,7 @@ const SingleReview = ({review}) => {
                         </div>
                         <div className="review-rating">
                             {rating.map((rate) => (
-                                rate
+                                <span key={Math.random()}>{rate}</span>
                             ))}
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const SingleReview = ({review}) => {
                 </div>
                 <div className="review-bottom">
                     {review.paragraphs.map((p) => (
-                        <p>{p}</p>
+                        <p key={Math.random()}>{p}</p>
                     ))}
                 </div>
             </div>

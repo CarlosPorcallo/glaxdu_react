@@ -10,6 +10,20 @@ export const heading_courses_home = {
 // settings
 export const recents_limit = 2;
 
+// templates
+export const review_template = {
+    "author": "",
+    "email": "",
+    "rating": 0,
+    "paragraphs": [],
+    "img": {
+        "src": "recent-post-1.jpg",
+        "alt": "" 
+    },
+    "className": "single-review",
+    "child": false
+};
+
 // mock data
 export const category_list = [
     {
@@ -87,6 +101,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -100,6 +115,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -158,6 +174,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -171,6 +188,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -229,6 +247,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -242,6 +261,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -302,6 +322,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -315,6 +336,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -374,6 +396,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],
@@ -387,6 +410,7 @@ export const courses = [
             {
                 "author": "White Lewis",
                 "rating": 5,
+                "email": "",
                 "paragraphs": [
                     "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
                 ],

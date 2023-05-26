@@ -10,7 +10,7 @@ const CourseProvider = ({ children }) => {
 
     const setDataCourse = (data) => { 
         course.current = data;
-        setCourse(data);
+        setCourse(course.current);
     };
 
     const setDataRelatedCourse = (data) => {

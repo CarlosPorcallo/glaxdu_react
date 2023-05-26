@@ -3822,6 +3822,18 @@ textarea:focus {
   }
 }
 
+i.rate:hover {
+  cursor: pointer;
+}
+
+.review-content {
+  width: 100%;
+}
+
+.single-review.child-review {
+  margin-bottom: 50px !important;
+}
+
 /*-------------- home 2 ------------*/
 .course-content.course-content-2 {
   padding: 26px 20px 29px;
