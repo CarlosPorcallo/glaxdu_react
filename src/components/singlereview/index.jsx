@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+// context
+import {CourseContext} from '../../middleware/context/course';
 
 const SingleReview = ({review}) => {
+    const {parentCourse, toggleReplyComment} = useContext(CourseContext);
     const img = "../../assets/img/blog/"+review.img.src;
     const rating = [];
     for (let i = 0; i < review.rating; i++) {
@@ -23,9 +27,11 @@ const SingleReview = ({review}) => {
                             ))}
                         </div>
                     </div>
-                    <div className="review-btn">
-                        <a href="#">Reply</a>
-                    </div>
+                    {review.className === "single-review" ? (
+                        <div className="review-btn">
+                            <a onClick={() => {toggleReplyComment(review.id)}}>Reply</a>
+                        </div>
+                    ) : null}
                 </div>
                 <div className="review-bottom">
                     {review.paragraphs.map((p) => (

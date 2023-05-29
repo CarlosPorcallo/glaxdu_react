@@ -12,6 +12,7 @@ export const recents_limit = 2;
 
 // templates
 export const review_template = {
+    "id": "",
     "author": "",
     "email": "",
     "rating": 0,
@@ -21,7 +22,7 @@ export const review_template = {
         "alt": "" 
     },
     "className": "single-review",
-    "child": false
+    "replies": []
 };
 
 // mock data
@@ -99,6 +100,7 @@ export const courses = [
         ],
         "reviews": [
             {
+                "id": 1,
                 "author": "White Lewis",
                 "rating": 5,
                 "email": "",
@@ -110,21 +112,22 @@ export const courses = [
                     "alt": "" 
                 },
                 "className": "single-review",
-                "child": false
-            },
-            {
-                "author": "White Lewis",
-                "rating": 5,
-                "email": "",
-                "paragraphs": [
-                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
-                ],
-                "img": {
-                    "src": "recent-post-2.jpg",
-                    "alt": "" 
-                },
-                "className": "single-review child-review",
-                "child": true
+                "replies": [
+                    {
+                        "id": 1,
+                        "author": "White Lewis",
+                        "rating": 5,
+                        "email": "",
+                        "paragraphs": [
+                            "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                        ],
+                        "img": {
+                            "src": "recent-post-2.jpg",
+                            "alt": "" 
+                        },
+                        "className": "single-review child-review"
+                    }
+                ]
             }
         ]
     },
@@ -172,6 +175,7 @@ export const courses = [
         ],
         "reviews": [
             {
+                "id": 2,
                 "author": "White Lewis",
                 "rating": 5,
                 "email": "",
@@ -183,21 +187,22 @@ export const courses = [
                     "alt": "" 
                 },
                 "className": "single-review",
-                "child": false
-            },
-            {
-                "author": "White Lewis",
-                "rating": 5,
-                "email": "",
-                "paragraphs": [
-                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
-                ],
-                "img": {
-                    "src": "recent-post-2.jpg",
-                    "alt": "" 
-                },
-                "className": "single-review child-review",
-                "child": true
+                "replies": [
+                    {
+                        "id": 2,
+                        "author": "White Lewis",
+                        "rating": 5,
+                        "email": "",
+                        "paragraphs": [
+                            "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                        ],
+                        "img": {
+                            "src": "recent-post-2.jpg",
+                            "alt": "" 
+                        },
+                        "className": "single-review child-review"
+                    }
+                ]
             }
         ] 
     },
@@ -245,6 +250,7 @@ export const courses = [
         ],
         "reviews": [
             {
+                "id": 3,
                 "author": "White Lewis",
                 "rating": 5,
                 "email": "",
@@ -256,21 +262,22 @@ export const courses = [
                     "alt": "" 
                 },
                 "className": "single-review",
-                "child": false
-            },
-            {
-                "author": "White Lewis",
-                "rating": 5,
-                "email": "",
-                "paragraphs": [
-                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
-                ],
-                "img": {
-                    "src": "recent-post-2.jpg",
-                    "alt": "" 
-                },
-                "className": "single-review child-review",
-                "child": true
+                "replies": [
+                    {
+                        "id": 3,
+                        "author": "White Lewis",
+                        "rating": 5,
+                        "email": "",
+                        "paragraphs": [
+                            "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                        ],
+                        "img": {
+                            "src": "recent-post-2.jpg",
+                            "alt": "" 
+                        },
+                        "className": "single-review child-review"
+                    }
+                ]
             }
         ] 
     },
@@ -320,6 +327,7 @@ export const courses = [
         ],
         "reviews": [
             {
+                "id": 4,
                 "author": "White Lewis",
                 "rating": 5,
                 "email": "",
@@ -331,21 +339,22 @@ export const courses = [
                     "alt": "" 
                 },
                 "className": "single-review",
-                "child": false
-            },
-            {
-                "author": "White Lewis",
-                "rating": 5,
-                "email": "",
-                "paragraphs": [
-                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
-                ],
-                "img": {
-                    "src": "recent-post-2.jpg",
-                    "alt": "" 
-                },
-                "className": "single-review child-review",
-                "child": true
+                "replies": [
+                    {
+                        "id": 4,
+                        "author": "White Lewis",
+                        "rating": 5,
+                        "email": "",
+                        "paragraphs": [
+                            "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                        ],
+                        "img": {
+                            "src": "recent-post-2.jpg",
+                            "alt": "" 
+                        },
+                        "className": "single-review child-review"
+                    }
+                ]
             }
         ]  
     },
@@ -394,6 +403,7 @@ export const courses = [
         ],
         "reviews": [
             {
+                "id": 5,
                 "author": "White Lewis",
                 "rating": 5,
                 "email": "",
@@ -405,21 +415,22 @@ export const courses = [
                     "alt": "" 
                 },
                 "className": "single-review",
-                "child": false
-            },
-            {
-                "author": "White Lewis",
-                "rating": 5,
-                "email": "",
-                "paragraphs": [
-                    "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
-                ],
-                "img": {
-                    "src": "recent-post-2.jpg",
-                    "alt": "" 
-                },
-                "className": "single-review child-review",
-                "child": true
+                "replies": [
+                    {
+                        "id": 5,
+                        "author": "White Lewis",
+                        "rating": 5,
+                        "email": "",
+                        "paragraphs": [
+                            "Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla nec, convallis conval lis leo. Maecenas bibendum bibendum larius."
+                        ],
+                        "img": {
+                            "src": "recent-post-2.jpg",
+                            "alt": "" 
+                        },
+                        "className": "single-review child-review"
+                    }
+                ]
             }
         ]
     }

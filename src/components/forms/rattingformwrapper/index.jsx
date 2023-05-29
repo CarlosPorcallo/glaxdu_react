@@ -5,13 +5,13 @@ import {review_template} from '../../../config/courses';
 import {CourseContext} from '../../../middleware/context/course';
 
 const RattingFormWrapper = () => {
+    const {course, parentCourse, replyComment, setDataCourse, toggleReplyComment} = useContext(CourseContext);
     const ratings = [1,2,3,4,5];
     const [rate, setRate] = useState(0);
     const reviewForm = useRef({
         ...
         review_template
     });
-    const {course, setDataCourse} = useContext(CourseContext);
 
     const getDiffs = (num1, num2) => {
         let diff = num1 - num2;
@@ -47,22 +47,38 @@ const RattingFormWrapper = () => {
         e.preventDefault();
         
         // se agrega el comentario al objeto con la información del curso
-        course.current.reviews.push(reviewForm.current);
-        
-        // se limpia el formulario
-        reviewForm.current = review_template;
+        // se valida si se trata de la respuesta a un comentario o un nuevo comentario
+        if (replyComment) {
+            reviewForm.current.className = "single-review child-review";
+            for (let i = 0; i < course.current.reviews.length; i++) {
+                if (course.current.reviews[i].id == parentCourse.current) {
+                    course.current.reviews[i].replies.push(reviewForm.current);
+                    break;
+                }
+            }
+        } else {
+            course.current.reviews.push({...reviewForm.current});
+        }
         
         // se actualiza la información 
         setDataCourse({
             ...course.current
         })
+
+        // se limpia el formulario
+        if (replyComment) {
+            toggleReplyComment(0);
+        }
+        reviewForm.current = {
+            ...review_template
+        };
         setRate(0);
         e.target.reset();
     };
 
     return (
         <div className="ratting-form-wrapper">
-            <h3>Add a Review</h3>
+            <h3>Add a {replyComment ? 'Reply': 'Review'}</h3>
             <div className="ratting-form">
                 <form onSubmit={submit}>
                     <div className="star-box">
