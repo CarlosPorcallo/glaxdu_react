@@ -1,5 +1,5 @@
 import React, { createContext, useState, useRef } from 'react';
-import {login_token, login_url} from '../../../config/login';
+import {login_token, login_url, forgot_password_url} from '../../../config/login';
 
 // ajax
 import {ajax} from '../../ajax';
@@ -13,16 +13,21 @@ const LoginProvider = ({ children }) => {
         username: "",
         password: "",
         logintoken: login_token
-    })
+    });
+    const forgot_psswd_url = useRef(forgot_password_url);
 
     const setFormUser = (field, value) => {
         formUser.current[field] = value;
     };
 
+    const getForgotPsswdUrl = () => {
+        return forgot_psswd_url.current;
+    };
+
     const login = () => {
         const callback_success = (response_data) => console.log(response_data);
         const callback_error = () => console.log("Ocurrió un error al realizar la petición");
-        $ajax.post(login_url, formUser.current, callback_success, callback_error);
+        $ajax.post(login_url, callback_success, callback_error, formUser.current);
     };
 
     return (
@@ -31,6 +36,7 @@ const LoginProvider = ({ children }) => {
                 user,
                 setUser,
                 setFormUser,
+                getForgotPsswdUrl,
                 login
             }}
         >

@@ -14,3 +14,26 @@
         width: 100%;
     }
 }
+
+/* formulario de login flotante */
+.floating-form {
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    line-height: 24px;
+    padding: 20px;
+    width: 25%;
+    position: fixed;
+    right: 22.5%;
+    top: 60px;
+    z-index: 999999999;
+}
+
+/* sticky navbar */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999998;
+    background-color: #fff;
+}

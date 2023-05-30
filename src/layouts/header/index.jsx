@@ -1,4 +1,5 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
+import {show_register_btn, login_in_new_page} from '../../config/login';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo.png';
 import './index.css';
@@ -9,10 +10,29 @@ import {HeaderFooterContext} from '../../middleware/context/headerfooter';
 // components
 import NavMenu from '../../components/navmenu';
 
+// layouts
+import FloatingForm from '../login/floatingform';
+
 const Header = () => {
     const {email_contact, phone, paths, header_img} = useContext(HeaderFooterContext);
+    const [showFloatingForm, setShowFloatingForm] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const offset=window.scrollY;
+        if (offset > 140) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+    }, []);
+
     return (
-        <header className="header-area">
+        <header className={scrolled ? "header-area sticky-navbar" : "header-area"}>
             <div className="header-top bg-img" style={{backgroundImage: header_img}}>
                 <div className="container">
                     <div className="row">
@@ -27,8 +47,14 @@ const Header = () => {
                         <div className="col-lg-6 col-md-5 col-12 col-sm-4">
                             <div className="login-register">
                                 <ul>
-                                    <li><Link to="/login">Login</Link></li>
-                                    <li><Link to="/login">Register</Link></li>
+                                    { login_in_new_page ? (
+                                        <li><Link to="/login">Login</Link></li>
+                                        ) : (
+                                        <li><a onClick={() => {setShowFloatingForm(!showFloatingForm)}}>Login</a></li>
+                                    )}
+                                    { show_register_btn && login_in_new_page ? (
+                                        <li><Link to="/login">Register</Link></li>
+                                    ) : null }
                                 </ul>
                             </div>
                         </div>
@@ -63,13 +89,13 @@ const Header = () => {
                             <nav id="mobile-menu-active">
                                 <NavMenu 
                                     paths={paths}
-                                    
                                 />
                             </nav>
                         </div>
                     </div>
                 </div>
             </div>
+            {showFloatingForm ? (<FloatingForm />) : null }
         </header>
     );
 }

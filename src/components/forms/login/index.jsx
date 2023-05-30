@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import {LoginContext} from '../../../middleware/context/login';
 
 const Login = () => {
-    const {login, setFormUser} = useContext(LoginContext);
+    const {login, setFormUser, getForgotPsswdUrl} = useContext(LoginContext);
 
     const setForm = e => {
         setFormUser(e.target.name, e.target.value);
@@ -18,13 +18,13 @@ const Login = () => {
         <div className="login-form-container">
             <div className="login-register-form">
                 <form onSubmit={submit}>
-                    <input type="text" name="user-name" placeholder="Username" onChange={setForm} />
-                    <input type="password" name="user-password" placeholder="Password" onChange={setForm} />
+                    <input type="text" name="username" placeholder="Username" onChange={setForm} />
+                    <input type="password" name="password" placeholder="Password" onChange={setForm} />
                     <div className="button-box">
                         <div className="login-toggle-btn">
                             <input type="checkbox" />
                             <label>Remember me</label>
-                            <a href="#">Forgot Password?</a>
+                            <a href={getForgotPsswdUrl()}>Forgot Password?</a>
                         </div>
                         <button className="default-btn" type="submit"><span>Login</span></button>
                     </div>
