@@ -6,7 +6,6 @@ import Register from '../../../components/forms/register';
 
 const LoginRegisterArea = () => {
     const [show_register, setShowRegister] = useState(false);
-
     return (
         <div className="login-register-area pt-130 pb-130">
             <div className="container">

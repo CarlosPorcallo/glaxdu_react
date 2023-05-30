@@ -17,7 +17,8 @@ const ReviewWrapper = ({reviews}) => {
     };
     useEffect(() => {
         setIndexes();
-    }, [])
+    }, []);
+    
     return (
         <div className="review-wrapper">
             {reviews.map((review) => (

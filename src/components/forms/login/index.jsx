@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+// context
+import {LoginContext} from '../../../middleware/context/login';
 
 const Login = () => {
+    const {login, setFormUser} = useContext(LoginContext);
+
+    const setForm = e => {
+        setFormUser(e.target.name, e.target.value);
+    };
+
+    const submit = e => {
+        e.preventDefault();
+        login();
+    };
     return (
         <div className="login-form-container">
             <div className="login-register-form">
-                <form action="#" method="post">
-                    <input type="text" name="user-name" placeholder="Username" />
-                    <input type="password" name="user-password" placeholder="Password" />
+                <form onSubmit={submit}>
+                    <input type="text" name="user-name" placeholder="Username" onChange={setForm} />
+                    <input type="password" name="user-password" placeholder="Password" onChange={setForm} />
                     <div className="button-box">
                         <div className="login-toggle-btn">
                             <input type="checkbox" />

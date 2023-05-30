@@ -7,15 +7,18 @@ import Rout3r from './routes';
 // context
 import {HeaderFooterProvider} from './middleware/context/headerfooter';
 import {CourseProvider} from './middleware/context/course';
+import {LoginProvider} from './middleware/context/login';
 
 function App() {
   return (
     <Fragment>
-      <HeaderFooterProvider>
-        <CourseProvider>
-          <Rout3r /> 
-        </CourseProvider>
-      </HeaderFooterProvider>
+      <LoginProvider>
+        <HeaderFooterProvider>
+          <CourseProvider>
+            <Rout3r /> 
+          </CourseProvider>
+        </HeaderFooterProvider>
+      </LoginProvider>
     </Fragment>
   );
 }
