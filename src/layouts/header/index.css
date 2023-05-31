@@ -8,10 +8,29 @@
         margin-top: -20px;
     }
 }
+@media screen and (min-width: 1800px) {
+    /* floating form */
+    .floating-form {
+        right: 19.5%;
+        width: 25%;
+    }
+}
 @media screen and (max-width: 969px) {
     /* logo navbar */
     .logo a img {
         width: 100%;
+    }
+}
+@media screen and (max-width: 1799px) {
+    /* floating form */
+    .floating-form {
+        right: 10%;
+        width: 45%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .choose-us {
+        margin-top: 50px;
     }
 }
 
@@ -21,9 +40,7 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     line-height: 24px;
     padding: 20px;
-    width: 25%;
     position: fixed;
-    right: 22.5%;
     top: 60px;
     z-index: 999999999;
 }

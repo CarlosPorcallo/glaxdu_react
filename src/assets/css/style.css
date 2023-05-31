@@ -1528,8 +1528,21 @@ textarea:focus {
   }
 }
 
-.mean-container a.meanmenu-reveal {
-  top: -26px;
+@media screen and (max-width: 767px) {
+  .mean-container a.meanmenu-reveal {
+    top: -40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mean-container a.meanmenu-reveal {
+    top: -65px;
+  }
+}
+
+.meanclose {
+  text-align: center;
+  text-indent: 0px;
+  font-size: 18px !important;
 }
 
 #mobile-menu-active {

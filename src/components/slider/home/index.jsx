@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import {settings_home} from '../../../config/slider';
 
 // components
 import SlideHome from '../../../components/slides/home';
+
+// middleware
+import {getWindowSize} from '../../../middleware/utils/window';
 
 const SliderHome = ({slides}) => {
     return (

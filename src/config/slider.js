@@ -6,7 +6,9 @@ export const settings_home = {
     dots: false,
     margin: 8,
     autoplay: true,
-    loop: true
+    loop: true,
+    minWidth: 780,
+    maxWidth: 1000
 };
 export const settings_courses = {
     slides: 3,
@@ -15,7 +17,9 @@ export const settings_courses = {
     dots: false,
     margin: 8,
     autoplay: true,
-    loop: true
+    loop: true,
+    minWidth: 780,
+    maxWidth: 1000
 };
 export const settings_events = {
     slides: 3,
@@ -24,7 +28,9 @@ export const settings_events = {
     dots: false,
     margin: 8,
     autoplay: true,
-    loop: true
+    loop: true,
+    minWidth: 780,
+    maxWidth: 1000
 };
 export const settings_brands = {
     slides: 6,
@@ -33,7 +39,9 @@ export const settings_brands = {
     dots: false,
     margin: 8,
     autoplay: true,
-    loop: true
+    loop: true,
+    minWidth: 780,
+    maxWidth: 1000
 };
 export const settings_gallery = {
     slides: 1,
@@ -42,5 +50,7 @@ export const settings_gallery = {
     dots: false,
     margin: 8,
     autoplay: true,
-    loop: true
+    loop: true,
+    minWidth: 780,
+    maxWidth: 1000
 };

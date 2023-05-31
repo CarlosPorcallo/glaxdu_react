@@ -2,7 +2,7 @@ import React, { createContext, useState, useRef } from 'react';
 import {login_token, login_url, forgot_password_url} from '../../../config/login';
 
 // ajax
-import {ajax} from '../../ajax';
+import {ajax} from '../../utils/ajax';
 
 const LoginContext = createContext();
 

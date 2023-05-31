@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import {settings_events} from '../../../config/slider';
@@ -6,7 +6,30 @@ import {settings_events} from '../../../config/slider';
 // components
 import SlideEvent from '../../../components/slides/events';
 
+// middleware
+import {getWindowSize} from '../../../middleware/utils/window';
+
 const SliderEvents = ({slides}) => {
+    const [window_size, setWindowSize] = useState(getWindowSize());
+
+    useEffect(() => {
+        const handleWindowResize = () => { 
+            if (window.innerWidth < 700) {
+                settings_events.slides = 1;
+            } else if (window.innerWidth >= 700 && window.innerWidth <= 1000) {
+                settings_events.slides = 2;
+            } else {
+                settings_events.slides = 3;
+            }
+            setWindowSize(getWindowSize()); 
+        };    
+        window.addEventListener('resize', handleWindowResize);
+        
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        }; 
+    }, []);
+
     return (
         <div className="slider-area">
             <OwlCarousel

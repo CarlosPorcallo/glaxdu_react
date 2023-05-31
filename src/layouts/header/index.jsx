@@ -17,6 +17,7 @@ const Header = () => {
     const {email_contact, phone, paths, header_img} = useContext(HeaderFooterContext);
     const [showFloatingForm, setShowFloatingForm] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     const handleScroll = () => {
         const offset=window.scrollY;
@@ -77,7 +78,6 @@ const Header = () => {
                                     <nav>
                                         <NavMenu
                                             paths={paths}
-                                            className={"menu-overflow"}
                                         />
                                     </nav>
                                 </div>
@@ -85,12 +85,34 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="mobile-menu-area">
-                        <div className="mobile-menu">
-                            <nav id="mobile-menu-active">
-                                <NavMenu 
-                                    paths={paths}
-                                />
-                            </nav>
+                        <div className="mobile-menu mean-container">
+                            <div className="mean-bar">
+                                {!showMobileMenu ? (
+                                    <a 
+                                        className="meanmenu-reveal"
+                                        onClick={() => {setShowMobileMenu(!showMobileMenu)}}
+                                    >
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                ) : (   
+                                    <a 
+                                        className="meanmenu-reveal meanclose"
+                                        onClick={() => {setShowMobileMenu(!showMobileMenu)}}        
+                                    >X</a>
+                                )}
+                            </div>
+                            <div className="mean-push"></div>
+
+                            {showMobileMenu ? (
+                                <nav className="mean-nav">
+                                    <NavMenu 
+                                        paths={paths}
+                                        className={"menu-overflow"}
+                                    />
+                                </nav>
+                            ) : null}
                         </div>
                     </div>
                 </div>
