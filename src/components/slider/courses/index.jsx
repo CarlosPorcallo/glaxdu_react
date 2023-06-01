@@ -28,7 +28,6 @@ const SliderCourses = ({slides}) => {
             window.removeEventListener('resize', handleWindowResize);
         }; 
     }, []);
-    //handleWindowResize()
 
     return (
         <div className="slider-area">

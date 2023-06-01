@@ -63,10 +63,12 @@ const Home = () => {
                 courses={courses}
                 img_background={img_background}
             />
-            <TeacherArea 
-                caption={caption_teacher}
-                cards={cards_teacher}
-            />
+            <PaginatorProvider>
+                <TeacherArea 
+                    caption={caption_teacher}
+                    cards={cards_teacher}
+                />
+            </PaginatorProvider>
             <EventArea 
                 caption={caption_event}
                 slides={slides_events}

@@ -27,6 +27,8 @@ export const share = [
 export const recents_limit = 2;
 export const page_size_home = 4;
 export const page_size = 6;
+export const min_width = 780;
+export const max_width = 1000;
 
 // mock data
 export const posts = [

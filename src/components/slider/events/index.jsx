@@ -14,9 +14,9 @@ const SliderEvents = ({slides}) => {
 
     useEffect(() => {
         const handleWindowResize = () => { 
-            if (window.innerWidth < 700) {
+            if (window.innerWidth < settings_events.minWidth) {
                 settings_events.slides = 1;
-            } else if (window.innerWidth >= 700 && window.innerWidth <= 1000) {
+            } else if (window.innerWidth >= settings_events.minWidth && window.innerWidth <= settings_events.maxWidth) {
                 settings_events.slides = 2;
             } else {
                 settings_events.slides = 3;

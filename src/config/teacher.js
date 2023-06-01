@@ -1,7 +1,10 @@
 // constantes
 export const caption = "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ";
+export const card_limit = 3;
+export const min_width = 780;
+export const max_width = 1000;
 
-// cards
+// mock data
 export const cards = [
     {
         "id": 1,
