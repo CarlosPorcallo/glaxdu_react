@@ -1,5 +1,5 @@
-import {React, useState, useContext} from 'react';
-import {page_size} from '../../../config/blog';
+import React, {useContext, useState, useEffect, useRef} from 'react';
+import {page_size, min_width, max_width} from '../../../config/blog';
 
 // context
 import {PaginatorContext} from '../../../middleware/context/paginator';
@@ -11,28 +11,62 @@ import Paginator from '../../../components/paginator';
 // layouts
 import Sidebar from '../../sidebar';
 
+// middleware
+import {getWindowSize} from '../../../middleware/utils/window';
+
 const BlogArea2 = ({posts}) => {
+    const [window_size, setWindowSize] = useState(getWindowSize());
     const {currentPage} = useContext(PaginatorContext);
     const [blogPosts, setBlogPosts] = useState(posts);
+    const pageSize = useRef(page_size);
     let currentPosts = [];
     // total de posts
     let page_total = 0;
     // se define el indice inicial y final en la primer carga
     let indexOfLastPost = 0;
     let indexOfFirstPost = 0;
-    
-    // se calcula el total de páginas
-    page_total = Math.ceil(posts.length/page_size);
-    if (posts.length%page_size !== 0 && posts.length>page_size) {
-        page_total++;
-    }
-        
-    // se define el indice inicial y final en cada carga
-    indexOfLastPost = currentPage * page_size;
-    indexOfFirstPost = indexOfLastPost - page_size;
 
-    // se define el bloque de posts a mostrar en la página actual
-    currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+    const setConfig = () => {
+        if (window.innerWidth < min_width) {
+            pageSize.current = 1;
+        } else if (window.innerWidth >= min_width && window.innerWidth <= max_width) {
+            pageSize.current = 2;
+        } else {
+            pageSize.current = page_size;
+        }
+    };
+    
+    const setPosts = () => {
+        // se calcula el total de páginas
+        page_total = Math.ceil(posts.length/pageSize.current);
+        if (posts.length%pageSize.current !== 0 && posts.length>pageSize.current) {
+            page_total++;
+        }
+            
+        // se define el indice inicial y final en cada carga
+        indexOfLastPost = currentPage * pageSize.current;
+        indexOfFirstPost = indexOfLastPost - pageSize.current;
+    
+        // se define el bloque de posts a mostrar en la página actual
+        currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+    };
+
+    const handleWindowResize = () => { 
+        setWindowSize(getWindowSize()); 
+        setConfig();
+        setPosts()
+    };    
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize);
+        
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        }; 
+    }, []);
+
+    setConfig();
+    setPosts();
 
     return (
         <div className="event-area pt-130 pb-130">

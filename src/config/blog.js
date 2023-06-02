@@ -26,7 +26,7 @@ export const share = [
 // settings
 export const recents_limit = 2;
 export const page_size_home = 4;
-export const page_size = 6;
+export const page_size = 3;
 export const min_width = 780;
 export const max_width = 1000;
 
